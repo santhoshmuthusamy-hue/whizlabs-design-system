@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Brand Deck" description="Whizlabs design-system presentation on deck-stage — logo, colour, type, components and UI kits." -->
+<helmet>
+<script src="./ds-base.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.js"></script>
+<style>body{margin:0;background:#26241f}</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="Title" data-screen-label="01" data-speaker-notes="Before we look at a single screen, the reason this exists. Whizlabs ships a lot of surfaces — a marketing site, a learner app, practice tests, labs — and right now every one of them is a fresh set of decisions. Someone picks an orange, someone picks a spacing, someone picks a shadow. None of it is wrong on its own, but together it stops looking like one company. This deck is the fix: one place where those decisions are already made, so nobody has to make them again." style="display:flex;flex-direction:column;justify-content:space-between;padding:100px 100px 80px;background:linear-gradient(135deg,#e8402b 0%,#f0602a 52%,#f78b20 100%);font-family:Poppins,sans-serif;color:#fff;position:relative;overflow:hidden">
+<span style="position:absolute;inset:0;background:radial-gradient(120% 120% at 100% 0%,rgba(255,255,255,.22),transparent 58%);pointer-events:none"></span>
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgMjAyLjUgMjcuNiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXaGl6bGFicyI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTI4LjEyLDI4LjA2bC05LjMtMTYuOGMtMS4yLTIuMS0zLjQtMy40LTUuOC0zLjRoLTUuN2MtLjIsMC0uNS4yLS41LjR2LjNsMTIuNiwyMi44YzEuMSwyLjEsMy4zLDMuNCw1LjgsMy40aDYuNWwtLjktMS42LjksMS42aDQuNmMuNiwwLDEtLjQsMS0uOXMwLS40LS4xLS42Yy0zLjgsMC03LjMtMi05LjMtNS4yaC4yLDBaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTQ3LjUyLDI4LjA2bC05LjMtMTYuOGMtMS4xLTIuMS0zLjQtMy40LTUuOC0zLjRoLTUuN2MtLjIsMC0uNS4yLS41LjR2LjNsMTIuNiwyMi44YzEuMSwyLjEsMy4zLDMuNCw1LjgsMy40aDYuNWwtLjgtMS42LjksMS42aDQuNmMuNiwwLDEtLjQsMS0uOXMwLS40LS4xLS42Yy0zLjgsMC03LjQtMi05LjQtNS4yaC4yLDBaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTQ4LjQyLDEzLjc2aDBjLjgsMi4zLDMuMiwzLjYsNS42LDIuOCwxLjgtLjYsMy0yLjMsMy00LjJzLTItNC40LTQuNC00LjRoLTguNGMtLjUsMC0uOS41LS45LDF2LjJjMy40LDAsNSw0LjYsNSw0LjZoLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTg4LjEyLDEzLjk2aC0uNWMtLjIsMC0uNC4yLS41LjRsLTMsMTMuNy01LTEzLjZjLS4xLS40LS42LS42LS45LS41LS4yLDAtLjQuMi0uNS41bC01LDEzLjYtMi44LTEzLjV2LS4yYzAtLjItLjItLjQtLjUtLjRoLS41Yy0uMiwwLS4zLDAtLjQuMnYuN2wzLjQsMTUuOWMwLC4zLjQuNS43LjVoMGMuMywwLC42LS4yLjctLjVsNS4yLTE0LjEsNS4yLDE0LjFjLjEuMy40LjUuNy41aDBjLjMsMCwuNi0uMi43LS41bDMuNC0xNS45di0uN2MwLS4xLS4xLS4yLS4zLS4yaC0uMVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTA3LjAyLDEzLjk2aC0uNWMtLjMsMC0uNS4yLS41LjVoMHY3LjVoLTEwLjF2LTcuNWMwLS4zLS4yLS41LS41LS41aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi41YzAsLjMuMi41LjUuNWguNWMuMywwLC41LS4yLjUtLjVoMHYtNy41aDEwLjF2Ny41YzAsLjMuMi41LjUuNWguNWMuMywwLC41LS4yLjUtLjVoMFYxNC40NmMwLS4zLS4yLS41LS40LS41aC0uMVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTE2LjcyLDEzLjk2aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi41YzAsLjMuMi41LjUuNWguNWMuMywwLC41LS4yLjUtLjVoMFYxNC40NmMwLS4zLS4zLS41LS41LS41WiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0xMzUuNDIsMjkuODZoLTEwbDkuOS0xNC44Yy4yLS4yLjItLjUuMS0uNy0uMS0uMi0uNC0uNC0uNi0uNGgtMTAuNGMtLjMsMC0uNS4yLS41LjVoMHYuNWMwLC4zLjIuNS41LjVoOS4xbC05LjksMTQuOGMtLjIuMi0uMi41LS4xLjdzLjQuNC42LjRoMTEuM2MuMywwLC41LS4yLjUtLjVoMHYtLjVjMC0uMy0uMi0uNS0uNC0uNWgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTE1Mi4wMiwyOS44NmgtOC43di0xNS40YzAtLjMtLjItLjUtLjUtLjVoLS41Yy0uMywwLS41LjItLjUuNWgwdjE2LjJjMCwuNC4zLjcuNy43aDkuNGMuMywwLC41LS4yLjUtLjVoMHYtLjVjMC0uMi0uMS0uNC0uNC0uNGgwdi0uMVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTY1LjAyLDE0LjQ2Yy0uMi0uNC0uNy0uNS0xLjEtLjMtLjEsMC0uMi4yLS4zLjNsLTcsMTUuOXYuM2MtLjIuMS0uMS4zLS4xLjVzLjIuMi40LjJoLjVjLjIsMCwuNC0uMS41LS4zbDYuNC0xNC41LDYuNCwxNC40aDBjMCwuMy4zLjQuNS40aC41Yy4yLDAsLjMsMCwuNC0uMi4xLS4yLjEtLjMsMC0uNWwtNy4xLTE2LjNoMHYuMVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTg3LjkyLDIyLjM2YzEuMi0uOCwxLjktMi4yLDEuOS0zLjYtLjItMi42LTIuNC00LjctNS00LjVoLTUuOGMtLjQsMC0uNy4zLS43LjdoMHYxNS4zYzAsLjQuMy43LjcuN2g2LjhjMi42LjIsNC45LTEuOSw1LTQuNWgwYzAtMS44LTEuMi0zLjQtMi45LTRoMHYtLjFaTTE4OC40MiwxOC43NmMtLjEsMS45LTEuOCwzLjMtMy42LDMuMWgtNXYtNi4zaDVjMS45LS4xLDMuNSwxLjMsMy42LDMuMWgwdi4xWk0xODUuODIsMjMuNDZjMS45LS4xLDMuNSwxLjMsMy42LDMuMS0uMiwxLjktMS44LDMuMy0zLjYsMy4xaC02LjF2LTYuM2g2LjF2LjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTIwMi43MiwyMS44NmMtMi40LS45LTQuNy0xLjgtNC43LTMuMnMxLjktMy4yLDQuMy0zLjIsNC4zLDEuNCw0LjMsMy4ydi4yYzAsLjMuMi41LjUuNWguNWMuMywwLC41LS4yLjUtLjVoMHYtLjJjMC0yLjYtMi42LTQuNy01LjgtNC43cy01LjgsMi4xLTUuOCw0LjcsMi45LDMuNiw1LjksNC42YzIuNC45LDQuNywxLjgsNC43LDMuM3MtMi4yLDMuMi00LjgsMy4yLTQuOC0xLjQtNC44LTMuMnYtLjJjMC0uMy0uMi0uNS0uNS0uNWgtLjVjLS4zLDAtLjUuMi0uNS41aDB2LjJjMCwyLjYsMi44LDQuNyw2LjMsNC43czYuMy0yLjEsNi4zLTQuN2MuMS0yLjUtMi45LTMuNi01LjktNC43WiI+PC9wYXRoPjwvc3ZnPg==" alt="Whizlabs" style="position:relative;height:64px;width:auto;display:block;align-self:flex-start">
+<div style="position:relative;display:flex;flex-direction:column;gap:32px">
+<h1 style="margin:0;font-size:112px;font-weight:700;line-height:1.05;letter-spacing:-.025em">Design System</h1>
+<p style="margin:0;font-size:38px;font-weight:300;line-height:1.4;color:rgba(255,255,255,.92);max-width:30ch">Foundations, components and UI kits for the Whizlabs certification-training platform.</p>
+</div>
+<p style="position:relative;margin:0;font-size:28px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75)">Version 1 · August 2026</p>
+</section>
+
+<section data-label="Contents" data-screen-label="02" data-speaker-notes="Quick map of where we're going. Foundations first — logo, colour, type, space — because those are the pieces everything else is built from. Then motion and states, then the components, then two full product surfaces built out of them. And I'll finish honestly, on what's still open. Roughly twenty minutes, and stop me wherever." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 64px;font-size:64px;font-weight:700;letter-spacing:-.02em">Contents</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:36px 80px">
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">01</span><span style="font-size:36px;font-weight:500">The logo</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">05</span><span style="font-size:36px;font-weight:500">Motion and states</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">02</span><span style="font-size:36px;font-weight:500">Colour</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">06</span><span style="font-size:36px;font-weight:500">49 components, in detail</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">03</span><span style="font-size:36px;font-weight:500">Typography</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">07</span><span style="font-size:36px;font-weight:500">UI kits</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">04</span><span style="font-size:36px;font-weight:500">Space, radius, elevation</span></div>
+<div style="display:flex;gap:28px;align-items:baseline;border-top:2px solid #efece7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">08</span><span style="font-size:36px;font-weight:500">Open items</span></div>
+</div>
+</section>
+
+<section data-label="Logo" data-screen-label="03" data-speaker-notes="Start with the logo, because it's the thing that gets misused most. Three variants, and the reason there are exactly three is that people were previously improvising — stretching the lockup, dropping it on a dark background where the wordmark disappeared, or re-typing WHIZLABS in whatever font was to hand. Now there's a correct answer for every context. And critically, size sets the height, not the width — that one rule prevents most of the distortion I used to see." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">The logo</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:52ch">Three vector variants. <span style="font-weight:500">Size sets the height</span> — width follows the artwork.</p>
+<div style="display:grid;grid-template-columns:1.6fr 1fr;gap:28px;flex:1">
+<div style="border:2px solid #efece7;border-radius:20px;display:grid;place-items:center;padding:40px"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgMjAyLjUgMjcuNiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXaGl6bGFicyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJ3bC1nIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjYuOCIgeTE9IjM0LjgiIHgyPSI1Ny4yIiB5Mj0iNy42Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlODQwMmIiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii41MiIgc3RvcC1jb2xvcj0iI2YwNjAyYSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y3OGIyMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik0yOC4xMiwyOC4wNmwtOS4zLTE2LjhjLTEuMi0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS45LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy4zLTItOS4zLTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00Ny41MiwyOC4wNmwtOS4zLTE2LjhjLTEuMS0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS44LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy40LTItOS40LTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00OC40MiwxMy43NmgwYy44LDIuMywzLjIsMy42LDUuNiwyLjgsMS44LS42LDMtMi4zLDMtNC4ycy0yLTQuNC00LjQtNC40aC04LjRjLS41LDAtLjkuNS0uOSwxdi4yYzMuNCwwLDUsNC42LDUsNC42aC4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik04OC4xMiwxMy45NmgtLjVjLS4yLDAtLjQuMi0uNS40bC0zLDEzLjctNS0xMy42Yy0uMS0uNC0uNi0uNi0uOS0uNS0uMiwwLS40LjItLjUuNWwtNSwxMy42LTIuOC0xMy41di0uMmMwLS4yLS4yLS40LS41LS40aC0uNWMtLjIsMC0uMywwLS40LjJ2LjdsMy40LDE1LjljMCwuMy40LjUuNy41aDBjLjMsMCwuNi0uMi43LS41bDUuMi0xNC4xLDUuMiwxNC4xYy4xLjMuNC41LjcuNWgwYy4zLDAsLjYtLjIuNy0uNWwzLjQtMTUuOXYtLjdjMC0uMS0uMS0uMi0uMy0uMmgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTEwNy4wMiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2Ny41aC0xMC4xdi03LjVjMC0uMy0uMi0uNS0uNS0uNWgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LTcuNWgxMC4xdjcuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMi0uNS0uNC0uNWgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTExNi43MiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMy0uNS0uNS0uNVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMGMxMjIwIiBkPSJNMTM1LjQyLDI5Ljg2aC0xMGw5LjktMTQuOGMuMi0uMi4yLS41LjEtLjctLjEtLjItLjQtLjQtLjYtLjRoLTEwLjRjLS4zLDAtLjUuMi0uNS41aDB2LjVjMCwuMy4yLjUuNS41aDkuMWwtOS45LDE0LjhjLS4yLjItLjIuNS0uMS43cy40LjQuNi40aDExLjNjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjMtLjItLjUtLjQtLjVoLS4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0xNTIuMDIsMjkuODZoLTguN3YtMTUuNGMwLS4zLS4yLS41LS41LS41aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi4yYzAsLjQuMy43LjcuN2g5LjRjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjItLjEtLjQtLjQtLjRoMHYtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE2NS4wMiwxNC40NmMtLjItLjQtLjctLjUtMS4xLS4zLS4xLDAtLjIuMi0uMy4zbC03LDE1Ljl2LjNjLS4yLjEtLjEuMy0uMS41cy4yLjIuNC4yaC41Yy4yLDAsLjQtLjEuNS0uM2w2LjQtMTQuNSw2LjQsMTQuNGgwYzAsLjMuMy40LjUuNGguNWMuMiwwLC4zLDAsLjQtLjIuMS0uMi4xLS4zLDAtLjVsLTcuMS0xNi4zaDB2LjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE4Ny45MiwyMi4zNmMxLjItLjgsMS45LTIuMiwxLjktMy42LS4yLTIuNi0yLjQtNC43LTUtNC41aC01LjhjLS40LDAtLjcuMy0uNy43aDB2MTUuM2MwLC40LjMuNy43LjdoNi44YzIuNi4yLDQuOS0xLjksNS00LjVoMGMwLTEuOC0xLjItMy40LTIuOS00aDB2LS4xWk0xODguNDIsMTguNzZjLS4xLDEuOS0xLjgsMy4zLTMuNiwzLjFoLTV2LTYuM2g1YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjFoMHYuMVpNMTg1LjgyLDIzLjQ2YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjEtLjIsMS45LTEuOCwzLjMtMy42LDMuMWgtNi4xdi02LjNoNi4xdi4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0yMDIuNzIsMjEuODZjLTIuNC0uOS00LjctMS44LTQuNy0zLjJzMS45LTMuMiw0LjMtMy4yLDQuMywxLjQsNC4zLDMuMnYuMmMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LS4yYzAtMi42LTIuNi00LjctNS44LTQuN3MtNS44LDIuMS01LjgsNC43LDIuOSwzLjYsNS45LDQuNmMyLjQuOSw0LjcsMS44LDQuNywzLjNzLTIuMiwzLjItNC44LDMuMi00LjgtMS40LTQuOC0zLjJ2LS4yYzAtLjMtLjItLjUtLjUtLjVoLS41Yy0uMywwLS41LjItLjUuNWgwdi4yYzAsMi42LDIuOCw0LjcsNi4zLDQuN3M2LjMtMi4xLDYuMy00LjdjLjEtMi41LTIuOS0zLjYtNS45LTQuN1oiPjwvcGF0aD48L2c+PC9zdmc+" alt="Whizlabs" style="height:76px;width:auto"></div>
+<div style="border:2px solid #efece7;border-radius:20px;display:grid;place-items:center;padding:40px"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgNTAuOCAyNy42IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IldoaXpsYWJzIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9IndsLWciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNi44IiB5MT0iMzQuOCIgeDI9IjU3LjIiIHkyPSI3LjYiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U4NDAyYiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjUyIiBzdG9wLWNvbG9yPSIjZjA2MDJhIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjc4YjIwIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGc+PHBhdGggZmlsbD0idXJsKCN3bC1nKSIgZD0iTTI4LjEyLDI4LjA2bC05LjMtMTYuOGMtMS4yLTIuMS0zLjQtMy40LTUuOC0zLjRoLTUuN2MtLjIsMC0uNS4yLS41LjR2LjNsMTIuNiwyMi44YzEuMSwyLjEsMy4zLDMuNCw1LjgsMy40aDYuNWwtLjktMS42LjksMS42aDQuNmMuNiwwLDEtLjQsMS0uOXMwLS40LS4xLS42Yy0zLjgsMC03LjMtMi05LjMtNS4yaC4yLDBaIj48L3BhdGg+PHBhdGggZmlsbD0idXJsKCN3bC1nKSIgZD0iTTQ3LjUyLDI4LjA2bC05LjMtMTYuOGMtMS4xLTIuMS0zLjQtMy40LTUuOC0zLjRoLTUuN2MtLjIsMC0uNS4yLS41LjR2LjNsMTIuNiwyMi44YzEuMSwyLjEsMy4zLDMuNCw1LjgsMy40aDYuNWwtLjgtMS42LjksMS42aDQuNmMuNiwwLDEtLjQsMS0uOXMwLS40LS4xLS42Yy0zLjgsMC03LjQtMi05LjQtNS4yaC4yLDBaIj48L3BhdGg+PHBhdGggZmlsbD0idXJsKCN3bC1nKSIgZD0iTTQ4LjQyLDEzLjc2aDBjLjgsMi4zLDMuMiwzLjYsNS42LDIuOCwxLjgtLjYsMy0yLjMsMy00LjJzLTItNC40LTQuNC00LjRoLTguNGMtLjUsMC0uOS41LS45LDF2LjJjMy40LDAsNSw0LjYsNSw0LjZoLjFaIj48L3BhdGg+PC9nPjwvc3ZnPg==" alt="Whizlabs mark" style="height:104px;width:auto"></div>
+<div style="background:#1a1917;border-radius:20px;display:grid;place-items:center;padding:40px"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgMjAyLjUgMjcuNiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXaGl6bGFicyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJ3bC1nIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjYuOCIgeTE9IjM0LjgiIHgyPSI1Ny4yIiB5Mj0iNy42Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlODQwMmIiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii41MiIgc3RvcC1jb2xvcj0iI2YwNjAyYSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y3OGIyMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik0yOC4xMiwyOC4wNmwtOS4zLTE2LjhjLTEuMi0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS45LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy4zLTItOS4zLTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00Ny41MiwyOC4wNmwtOS4zLTE2LjhjLTEuMS0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS44LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy40LTItOS40LTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00OC40MiwxMy43NmgwYy44LDIuMywzLjIsMy42LDUuNiwyLjgsMS44LS42LDMtMi4zLDMtNC4ycy0yLTQuNC00LjQtNC40aC04LjRjLS41LDAtLjkuNS0uOSwxdi4yYzMuNCwwLDUsNC42LDUsNC42aC4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik04OC4xMiwxMy45NmgtLjVjLS4yLDAtLjQuMi0uNS40bC0zLDEzLjctNS0xMy42Yy0uMS0uNC0uNi0uNi0uOS0uNS0uMiwwLS40LjItLjUuNWwtNSwxMy42LTIuOC0xMy41di0uMmMwLS4yLS4yLS40LS41LS40aC0uNWMtLjIsMC0uMywwLS40LjJ2LjdsMy40LDE1LjljMCwuMy40LjUuNy41aDBjLjMsMCwuNi0uMi43LS41bDUuMi0xNC4xLDUuMiwxNC4xYy4xLjMuNC41LjcuNWgwYy4zLDAsLjYtLjIuNy0uNWwzLjQtMTUuOXYtLjdjMC0uMS0uMS0uMi0uMy0uMmgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEwNy4wMiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2Ny41aC0xMC4xdi03LjVjMC0uMy0uMi0uNS0uNS0uNWgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LTcuNWgxMC4xdjcuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMi0uNS0uNC0uNWgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTExNi43MiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMy0uNS0uNS0uNVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTM1LjQyLDI5Ljg2aC0xMGw5LjktMTQuOGMuMi0uMi4yLS41LjEtLjctLjEtLjItLjQtLjQtLjYtLjRoLTEwLjRjLS4zLDAtLjUuMi0uNS41aDB2LjVjMCwuMy4yLjUuNS41aDkuMWwtOS45LDE0LjhjLS4yLjItLjIuNS0uMS43cy40LjQuNi40aDExLjNjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjMtLjItLjUtLjQtLjVoLS4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0xNTIuMDIsMjkuODZoLTguN3YtMTUuNGMwLS4zLS4yLS41LS41LS41aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi4yYzAsLjQuMy43LjcuN2g5LjRjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjItLjEtLjQtLjQtLjRoMHYtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTE2NS4wMiwxNC40NmMtLjItLjQtLjctLjUtMS4xLS4zLS4xLDAtLjIuMi0uMy4zbC03LDE1Ljl2LjNjLS4yLjEtLjEuMy0uMS41cy4yLjIuNC4yaC41Yy4yLDAsLjQtLjEuNS0uM2w2LjQtMTQuNSw2LjQsMTQuNGgwYzAsLjMuMy40LjUuNGguNWMuMiwwLC4zLDAsLjQtLjIuMS0uMi4xLS4zLDAtLjVsLTcuMS0xNi4zaDB2LjFaIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTE4Ny45MiwyMi4zNmMxLjItLjgsMS45LTIuMiwxLjktMy42LS4yLTIuNi0yLjQtNC43LTUtNC41aC01LjhjLS40LDAtLjcuMy0uNy43aDB2MTUuM2MwLC40LjMuNy43LjdoNi44YzIuNi4yLDQuOS0xLjksNS00LjVoMGMwLTEuOC0xLjItMy40LTIuOS00aDB2LS4xWk0xODguNDIsMTguNzZjLS4xLDEuOS0xLjgsMy4zLTMuNiwzLjFoLTV2LTYuM2g1YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjFoMHYuMVpNMTg1LjgyLDIzLjQ2YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjEtLjIsMS45LTEuOCwzLjMtMy42LDMuMWgtNi4xdi02LjNoNi4xdi4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0yMDIuNzIsMjEuODZjLTIuNC0uOS00LjctMS44LTQuNy0zLjJzMS45LTMuMiw0LjMtMy4yLDQuMywxLjQsNC4zLDMuMnYuMmMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LS4yYzAtMi42LTIuNi00LjctNS44LTQuN3MtNS44LDIuMS01LjgsNC43LDIuOSwzLjYsNS45LDQuNmMyLjQuOSw0LjcsMS44LDQuNywzLjNzLTIuMiwzLjItNC44LDMuMi00LjgtMS40LTQuOC0zLjJ2LS4yYzAtLjMtLjItLjUtLjUtLjVoLS41Yy0uMywwLS41LjItLjUuNWgwdi4yYzAsMi42LDIuOCw0LjcsNi4zLDQuN3M2LjMtMi4xLDYuMy00LjdjLjEtMi41LTIuOS0zLjYtNS45LTQuN1oiPjwvcGF0aD48L2c+PC9zdmc+" alt="Whizlabs" style="height:76px;width:auto"></div>
+<div style="background:linear-gradient(135deg,#fff3ee,#fff8ea);border:2px solid #ffe7dc;border-radius:20px;display:grid;place-items:center;padding:40px"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgMjAyLjUgMjcuNiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXaGl6bGFicyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJ3bC1nIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjYuOCIgeTE9IjM0LjgiIHgyPSI1Ny4yIiB5Mj0iNy42Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlODQwMmIiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii41MiIgc3RvcC1jb2xvcj0iI2YwNjAyYSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y3OGIyMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik0yOC4xMiwyOC4wNmwtOS4zLTE2LjhjLTEuMi0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS45LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy4zLTItOS4zLTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00Ny41MiwyOC4wNmwtOS4zLTE2LjhjLTEuMS0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS44LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy40LTItOS40LTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00OC40MiwxMy43NmgwYy44LDIuMywzLjIsMy42LDUuNiwyLjgsMS44LS42LDMtMi4zLDMtNC4ycy0yLTQuNC00LjQtNC40aC04LjRjLS41LDAtLjkuNS0uOSwxdi4yYzMuNCwwLDUsNC42LDUsNC42aC4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik04OC4xMiwxMy45NmgtLjVjLS4yLDAtLjQuMi0uNS40bC0zLDEzLjctNS0xMy42Yy0uMS0uNC0uNi0uNi0uOS0uNS0uMiwwLS40LjItLjUuNWwtNSwxMy42LTIuOC0xMy41di0uMmMwLS4yLS4yLS40LS41LS40aC0uNWMtLjIsMC0uMywwLS40LjJ2LjdsMy40LDE1LjljMCwuMy40LjUuNy41aDBjLjMsMCwuNi0uMi43LS41bDUuMi0xNC4xLDUuMiwxNC4xYy4xLjMuNC41LjcuNWgwYy4zLDAsLjYtLjIuNy0uNWwzLjQtMTUuOXYtLjdjMC0uMS0uMS0uMi0uMy0uMmgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTEwNy4wMiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2Ny41aC0xMC4xdi03LjVjMC0uMy0uMi0uNS0uNS0uNWgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LTcuNWgxMC4xdjcuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMi0uNS0uNC0uNWgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTExNi43MiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMy0uNS0uNS0uNVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMGMxMjIwIiBkPSJNMTM1LjQyLDI5Ljg2aC0xMGw5LjktMTQuOGMuMi0uMi4yLS41LjEtLjctLjEtLjItLjQtLjQtLjYtLjRoLTEwLjRjLS4zLDAtLjUuMi0uNS41aDB2LjVjMCwuMy4yLjUuNS41aDkuMWwtOS45LDE0LjhjLS4yLjItLjIuNS0uMS43cy40LjQuNi40aDExLjNjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjMtLjItLjUtLjQtLjVoLS4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0xNTIuMDIsMjkuODZoLTguN3YtMTUuNGMwLS4zLS4yLS41LS41LS41aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi4yYzAsLjQuMy43LjcuN2g5LjRjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjItLjEtLjQtLjQtLjRoMHYtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE2NS4wMiwxNC40NmMtLjItLjQtLjctLjUtMS4xLS4zLS4xLDAtLjIuMi0uMy4zbC03LDE1Ljl2LjNjLS4yLjEtLjEuMy0uMS41cy4yLjIuNC4yaC41Yy4yLDAsLjQtLjEuNS0uM2w2LjQtMTQuNSw2LjQsMTQuNGgwYzAsLjMuMy40LjUuNGguNWMuMiwwLC4zLDAsLjQtLjIuMS0uMi4xLS4zLDAtLjVsLTcuMS0xNi4zaDB2LjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE4Ny45MiwyMi4zNmMxLjItLjgsMS45LTIuMiwxLjktMy42LS4yLTIuNi0yLjQtNC43LTUtNC41aC01LjhjLS40LDAtLjcuMy0uNy43aDB2MTUuM2MwLC40LjMuNy43LjdoNi44YzIuNi4yLDQuOS0xLjksNS00LjVoMGMwLTEuOC0xLjItMy40LTIuOS00aDB2LS4xWk0xODguNDIsMTguNzZjLS4xLDEuOS0xLjgsMy4zLTMuNiwzLjFoLTV2LTYuM2g1YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjFoMHYuMVpNMTg1LjgyLDIzLjQ2YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjEtLjIsMS45LTEuOCwzLjMtMy42LDMuMWgtNi4xdi02LjNoNi4xdi4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0yMDIuNzIsMjEuODZjLTIuNC0uOS00LjctMS44LTQuNy0zLjJzMS45LTMuMiw0LjMtMy4yLDQuMywxLjQsNC4zLDMuMnYuMmMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LS4yYzAtMi42LTIuNi00LjctNS44LTQuN3MtNS44LDIuMS01LjgsNC43LDIuOSwzLjYsNS45LDQuNmMyLjQuOSw0LjcsMS44LDQuNywzLjNzLTIuMiwzLjItNC44LDMuMi00LjgtMS40LTQuOC0zLjJ2LS4yYzAtLjMtLjItLjUtLjUtLjVoLS41Yy0uMywwLS41LjItLjUuNWgwdi4yYzAsMi42LDIuOCw0LjcsNi4zLDQuN3M2LjMtMi4xLDYuMy00LjdjLjEtMi41LTIuOS0zLjYtNS45LTQuN1oiPjwvcGF0aD48L2c+PC9zdmc+" alt="Whizlabs" style="height:52px;width:auto"></div>
+</div>
+<p style="margin:44px 0 0;font-size:28px;font-weight:400;line-height:1.5;color:#6a655c">Clear space equals the mark height. Minimum lockup height 16px. Never re-typeset the wordmark, recolour the gradient, or add effects.</p>
+</section>
+
+<section data-label="Gradient" data-screen-label="04" data-speaker-notes="Here's the decision that saved the most time. Rather than invent a palette and hope it matched the logo, I pulled the three gradient stops straight out of the vector and built everything outward from them. So when you ask why the primary button is this particular orange — it isn't a taste call anybody has to defend. It's the middle of your own logo. That means nobody has to argue about brand colour again, and nothing drifts." style="display:flex;flex-direction:column;justify-content:space-between;padding:100px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);font-family:Poppins,sans-serif;color:#fff">
+<h2 style="margin:0;font-size:64px;font-weight:700;letter-spacing:-.02em;max-width:24ch">The gradient is the palette</h2>
+<div style="display:flex;gap:80px;align-items:flex-end">
+<div><p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:600">#e8402b</p><p style="margin:0;font-size:28px;font-weight:300;opacity:.85">Red · 0%</p></div>
+<div><p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:600">#f0602a</p><p style="margin:0;font-size:28px;font-weight:300;opacity:.85">Vermilion · 52%</p></div>
+<div><p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:600">#f78b20</p><p style="margin:0;font-size:28px;font-weight:300;opacity:.85">Orange · 100%</p></div>
+</div>
+<p style="margin:0;font-size:34px;font-weight:300;line-height:1.5;max-width:60ch">Every tint and shade in the system is built outward from these three stops, lifted straight from the logo vector. Allowed on primary buttons, 4px accent rules, thumbnail bands and progress fills — never as a page background.</p>
+</section>
+
+<section data-label="Ramps" data-screen-label="05" data-speaker-notes="The ramps are what make that usable in practice. One brand orange isn't enough to build an interface — you need a hover state, a selected row, a disabled state, a tint behind a warning. Without a defined ramp, people eyeball those, and eyeballed tints are where inconsistency creeps in fastest. The neutral is worth a word too: it's deliberately warm with no blue in it, because a cool grey next to this orange makes both look slightly wrong." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 56px;font-size:64px;font-weight:700;letter-spacing:-.02em">Colour ramps</h2>
+<p style="margin:0 0 20px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Orange — primary</p>
+<div style="display:flex;gap:8px;margin-bottom:44px">
+<div style="flex:1;height:96px;border-radius:10px;background:#fff5f0"></div><div style="flex:1;height:96px;border-radius:10px;background:#ffe7dc"></div><div style="flex:1;height:96px;border-radius:10px;background:#ffcab2"></div><div style="flex:1;height:96px;border-radius:10px;background:#fca781"></div><div style="flex:1;height:96px;border-radius:10px;background:#f78454"></div><div style="flex:1;height:96px;border-radius:10px;background:#f0602a"></div><div style="flex:1;height:96px;border-radius:10px;background:#d94b1c"></div><div style="flex:1;height:96px;border-radius:10px;background:#b23b17"></div><div style="flex:1;height:96px;border-radius:10px;background:#8c2f14"></div><div style="flex:1;height:96px;border-radius:10px;background:#6b2511"></div>
+</div>
+<p style="margin:0 0 20px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Ink — warm neutral</p>
+<div style="display:flex;gap:8px;margin-bottom:44px">
+<div style="flex:1;height:96px;border-radius:10px;background:#f9f7f4"></div><div style="flex:1;height:96px;border-radius:10px;background:#efece7"></div><div style="flex:1;height:96px;border-radius:10px;background:#e2ded7"></div><div style="flex:1;height:96px;border-radius:10px;background:#cbc6bd"></div><div style="flex:1;height:96px;border-radius:10px;background:#aca69c"></div><div style="flex:1;height:96px;border-radius:10px;background:#8a847a"></div><div style="flex:1;height:96px;border-radius:10px;background:#6a655c"></div><div style="flex:1;height:96px;border-radius:10px;background:#4e4a43"></div><div style="flex:1;height:96px;border-radius:10px;background:#37342e"></div><div style="flex:1;height:96px;border-radius:10px;background:#1a1917"></div>
+</div>
+<p style="margin:0;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:64ch">The neutral carries a trace of the brand's warmth and no blue at all, so nothing on the page competes with the orange or fights the near-black wordmark.</p>
+</section>
+
+<section data-label="Typography" data-screen-label="06" data-speaker-notes="Poppins is your typeface, so it's the system's typeface — no substitution, no negotiation. What's needed here isn't the font choice, it's the settings. Left alone, Poppins gets used at whatever weight and tracking each person likes, and the result reads as several different brands. Fixing the weights, the tracking and the line-height means a heading built by someone who's never seen this deck still comes out looking like Whizlabs." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#f9f7f4;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Poppins</h2>
+<p style="margin:0 0 60px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:56ch">One family for structure and reading text, with IBM Plex Mono for exam machinery.</p>
+<p style="margin:0 0 24px;font-size:72px;font-weight:700;letter-spacing:-.02em;line-height:1.1">Get certified. Faster.</p>
+<p style="margin:0 0 40px;font-size:44px;font-weight:600;letter-spacing:-.01em;color:#37342e">Section heading, 600</p>
+<p style="margin:0 0 48px;font-size:34px;font-weight:400;line-height:1.7;color:#4e4a43;max-width:52ch">Every practice test is written against the current exam blueprint, and every question carries a written explanation.</p>
+<div style="display:flex;gap:56px;align-items:baseline;border-top:2px solid #e2ded7;padding-top:36px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:52px;font-weight:600">42:17</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:36px;font-weight:500;color:#6a655c">SAA-C03</span>
+<span style="font-size:28px;font-weight:400;color:#6a655c;max-width:34ch;line-height:1.5">Mono is reserved for codes, timers, scores and question numbers.</span>
+</div>
+</section>
+
+<section data-label="Type rules" data-screen-label="07" data-speaker-notes="These three rules are the ones people push back on, so let me justify them. Poppins is geometric and wide, which means the habits borrowed from other typefaces actively hurt it — 800 goes clumsy at headline sizes, tight tracking closes the counters, and standard web line-height makes paragraphs feel cramped because there's more ink on every line. Encoding that as three rules means nobody has to learn it the slow way." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Three rules Poppins forces</h2>
+<p style="margin:0 0 64px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:56ch">It is geometric, wide and near-monolinear, and the system encodes the consequences.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;flex:1">
+<div style="background:#f9f7f4;border-radius:20px;padding:48px;display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">01</span>
+<span style="font-size:40px;font-weight:600;letter-spacing:-.01em;line-height:1.2">Weights stop at 700</span>
+<span style="font-size:28px;font-weight:400;line-height:1.6;color:#4e4a43">800 is clumsy at headline sizes. Display and H1 are 700, H2 and H3 are 600, labels 500.</span>
+</div>
+<div style="background:#f9f7f4;border-radius:20px;padding:48px;display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">02</span>
+<span style="font-size:40px;font-weight:600;letter-spacing:-.01em;line-height:1.2">Tracking stays light</span>
+<span style="font-size:28px;font-weight:400;line-height:1.6;color:#4e4a43">Minus .01em normally, minus .02em at display sizes. Tighter would close the counters.</span>
+</div>
+<div style="background:#f9f7f4;border-radius:20px;padding:48px;display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#f0602a">03</span>
+<span style="font-size:40px;font-weight:600;letter-spacing:-.01em;line-height:1.2">Lines breathe more</span>
+<span style="font-size:28px;font-weight:400;line-height:1.6;color:#4e4a43">Body is 16 on 1.7 and paragraphs cap near 58 characters, not 68.</span>
+</div>
+</div>
+<p style="margin:44px 0 0;font-size:28px;font-weight:400;line-height:1.5;color:#6a655c">Poppins Light 300 is loaded but reserved — it is the weight the logotype resembles, so keeping it out of the interface preserves the distinction.</p>
+</section>
+
+<section data-label="Space" data-screen-label="08" data-speaker-notes="Space, radius and elevation are the least glamorous slide here and probably the highest-value one. This is where inconsistency is most visible and least defensible — a card with a fourteen-pixel corner next to one with eight, padding that's sixteen here and twenty there. Nobody notices any single instance. Everybody notices the accumulation. Fixing it to one scale means a screen assembled by two different people still lines up." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 56px;font-size:64px;font-weight:700;letter-spacing:-.02em">Space, radius, elevation</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:64px 80px;flex:1">
+<div>
+<p style="margin:0 0 28px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Spacing — 4px base</p>
+<div style="display:flex;gap:14px;align-items:flex-end">
+<div style="width:24px;height:24px;border-radius:4px;background:#ffcab2"></div><div style="width:32px;height:32px;border-radius:4px;background:#fca781"></div><div style="width:44px;height:44px;border-radius:4px;background:#f78454"></div><div style="width:60px;height:60px;border-radius:5px;background:#f0602a"></div><div style="width:80px;height:80px;border-radius:6px;background:#d94b1c"></div><div style="width:104px;height:104px;border-radius:7px;background:#b23b17"></div>
+</div>
+<p style="margin:28px 0 0;font-size:28px;font-weight:400;line-height:1.5;color:#4e4a43">16 or 24 inside cards, 32 and 48 between blocks, 96 between page sections.</p>
+</div>
+<div>
+<p style="margin:0 0 28px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Radii</p>
+<div style="display:flex;gap:20px;align-items:flex-end">
+<div style="width:88px;height:72px;background:#f9f7f4;border:2px solid #e2ded7;border-radius:4px"></div><div style="width:88px;height:72px;background:#f9f7f4;border:2px solid #e2ded7;border-radius:6px"></div><div style="width:88px;height:72px;background:#f9f7f4;border:2px solid #e2ded7;border-radius:10px"></div><div style="width:88px;height:72px;background:#f9f7f4;border:2px solid #e2ded7;border-radius:14px"></div><div style="width:88px;height:72px;background:#f9f7f4;border:2px solid #e2ded7;border-radius:20px"></div><div style="width:112px;height:56px;background:#f9f7f4;border:2px solid #e2ded7;border-radius:999px"></div>
+</div>
+<p style="margin:28px 0 0;font-size:28px;font-weight:400;line-height:1.5;color:#4e4a43">14px is the card workhorse. The pill is for badges, search and progress only.</p>
+</div>
+<div>
+<p style="margin:0 0 28px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Elevation</p>
+<div style="display:flex;gap:24px">
+<div style="flex:1;height:88px;background:#fff;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08),0 1px 2px rgba(26,25,23,.04)"></div><div style="flex:1;height:88px;background:#fff;border-radius:14px;box-shadow:0 4px 12px rgba(26,25,23,.08)"></div><div style="flex:1;height:88px;background:#fff;border-radius:14px;box-shadow:0 12px 28px rgba(26,25,23,.10)"></div><div style="flex:1;height:88px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);border-radius:14px;box-shadow:0 8px 20px rgba(240,96,42,.28)"></div>
+</div>
+<p style="margin:28px 0 0;font-size:28px;font-weight:400;line-height:1.5;color:#4e4a43">Five neutral steps on the ink value, never black, plus one brand glow.</p>
+</div>
+<div>
+<p style="margin:0 0 28px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">The card recipe</p>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08);padding:32px;position:relative;overflow:hidden">
+<span style="position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20)"></span>
+<p style="margin:8px 0 8px;font-size:32px;font-weight:600">White, hairline, 14px, shadow-sm</p>
+<p style="margin:0;font-size:28px;font-weight:400;color:#6a655c">The only accent is a 4px gradient rule on the top edge. No coloured left borders.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-label="Motion" data-screen-label="09" data-speaker-notes="Interaction states matter more than they look like they should, because they're what makes an interface feel finished. Hover, press, focus, selection — one behaviour each, applied everywhere. And focus is the accessibility one I'd ask you not to trade away: it's the only way a keyboard user knows where they are. Note also what's absent. No bounce, no spring, no scroll animation. On a platform where people sit timed exams, motion that draws attention to itself is a cost, not a feature." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#1a1917;font-family:Poppins,sans-serif;color:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Motion and states</h2>
+<p style="margin:0 0 64px;font-size:34px;font-weight:300;line-height:1.5;color:#cbc6bd;max-width:56ch">One curve, five durations. Motion confirms an action; it never decorates.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px 80px;flex:1">
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 12px;font-size:36px;font-weight:600">Hover</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">Cards lift 2px and deepen their shadow. Primary buttons flatten to solid orange-600 and gain the brand glow.</p></div>
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 12px;font-size:36px;font-weight:600">Press</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">Scale .97 with no colour change, 80ms. Identical on every clickable control.</p></div>
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 12px;font-size:36px;font-weight:600">Focus</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">A 3px orange ring on fields, a 3px orange outline everywhere else. One global rule, never removed.</p></div>
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 12px;font-size:36px;font-weight:600">Selection</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">Orange-50 fill, orange-300 border, orange-700 text. The single selection idiom system-wide.</p></div>
+</div>
+<p style="margin:48px 0 0;font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;color:#f78b20">80 · 140 · 200 · 320 · 520ms — cubic-bezier(.2,.7,.3,1)</p>
+</section>
+
+<section data-label="Inventory" data-screen-label="10" data-speaker-notes="Twenty-six components, and the point of the inventory is coverage. If something a designer needs isn't in here, they'll build it themselves, and that's the moment the system starts leaking. So this set is sized to actually build your screens — not a showcase, a working kit. Each one carries a props contract and a usage note, so an engineer can pick it up without asking a designer what it's for." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Component inventory</h2>
+<p style="margin:0 0 48px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Forty-nine components in eight groups. Each ships with a props contract, a usage note and a live specimen card.</p>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:36px 32px;flex:1;align-content:start">
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Brand</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Logo · Icon</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Core</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Button · IconButton · Badge · Tag · Card · Avatar</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Forms</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Input · Select · Checkbox · Radio · Switch · SearchField · Slider · NumberField · Rating · ToggleButton · ButtonGroup · Fab · Autocomplete · TransferList</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Feedback</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Alert · ProgressBar · ScoreRing · Skeleton · Dialog · Snackbar · Spinner · Backdrop</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Navigation</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Tabs · Breadcrumb · Pagination · SidebarNav · Stepper · Menu · BottomNav · Link</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Learning</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">CourseCard · StatTile · LessonRow · QuestionCard</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Data display</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Divider · List · Table · Tooltip</p></div>
+<div style="border-top:4px solid #f0602a;padding-top:28px"><p style="margin:0 0 14px;font-size:30px;font-weight:600">Surfaces</p><p style="margin:0;font-size:24px;font-weight:400;line-height:1.55;color:#4e4a43">Paper · Accordion · AppBar</p></div>
+</div>
+</section>
+
+<section data-label="Controls" data-screen-label="11" data-speaker-notes="Worth seeing the components as real objects rather than a list. This is the payoff of everything before it — the button is the logo gradient, the badge tones are the status colours, the selected answer uses the one selection idiom, the progress fill is the same ramp. None of that was decided on this slide. It all came for free from the foundations, which is exactly the test of whether a system is working." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#f9f7f4;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 56px;font-size:64px;font-weight:700;letter-spacing:-.02em">Controls in the flesh</h2>
+<div style="display:flex;gap:28px;align-items:center;margin-bottom:48px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;height:76px;padding:0 44px;border-radius:14px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:32px;font-weight:600;letter-spacing:-.01em">Start free trial</span>
+<span style="display:inline-flex;align-items:center;height:76px;padding:0 44px;border-radius:14px;background:#fff;border:2px solid #e2ded7;color:#26241f;font-size:32px;font-weight:600;letter-spacing:-.01em">View syllabus</span>
+<span style="display:inline-flex;align-items:center;height:76px;padding:0 44px;border-radius:14px;border:2px solid #f0602a;color:#d94b1c;font-size:32px;font-weight:600;letter-spacing:-.01em">Outline</span>
+<span style="display:inline-flex;align-items:center;height:76px;padding:0 44px;border-radius:14px;color:#4e4a43;font-size:32px;font-weight:600;letter-spacing:-.01em">Ghost</span>
+</div>
+<div style="display:flex;gap:20px;align-items:center;margin-bottom:56px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase">Bestseller</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#efece7;color:#4e4a43;font-size:26px;font-weight:600">Associate</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#d8f3e3;color:#0b7a3c;font-size:26px;font-weight:600">Passed</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#fdf0d5;color:#8a5a06;font-size:26px;font-weight:600">Expiring</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#fef2f0;color:#a4271a;font-size:26px;font-weight:600">Failed</span>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;flex:1">
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08);padding:36px">
+<p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:#6a655c">Q12 / 65</p>
+<p style="margin:0 0 28px;font-size:30px;font-weight:400;line-height:1.55">An application must decouple order intake from fulfilment and guarantee exactly-once processing.</p>
+<div style="padding:22px 26px;border-radius:10px;border:2px solid #fca781;background:#fff5f0;font-size:28px;font-weight:500;color:#37342e">Amazon SQS FIFO queue</div>
+</div>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08);padding:36px;display:flex;flex-direction:column;justify-content:center;gap:28px">
+<p style="margin:0;font-size:30px;font-weight:500">Course progress</p>
+<div style="height:20px;border-radius:999px;background:#efece7;overflow:hidden"><div style="width:62%;height:100%;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20)"></div></div>
+<p style="margin:0;font-size:56px;font-weight:700;letter-spacing:-.02em">82%</p>
+<p style="margin:0;font-size:28px;font-weight:400;color:#6a655c">Average mock score</p>
+</div>
+</div>
+</section>
+
+<section data-label="Buttons" data-screen-label="12" data-speaker-notes="Buttons carry more weight than any other component, so they get the most definition. Six variants, four sizes, and a rule I'd hold to: one primary per view. The moment a screen has two gradient buttons, neither reads as the main action. Notice the primary is the logo gradient and hover flattens it to solid — that's not decoration, it's how you tell pressed-and-loading apart from idle at a glance." style="display:flex;flex-direction:column;padding:100px 100px 80px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Buttons</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Six variants, four sizes. One primary per view — a second gradient button means neither reads as the main action.</p>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Variants</p>
+<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:52px">
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:30px;font-weight:600;letter-spacing:-.01em;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;box-shadow:0 1px 2px rgba(26,25,23,.06)">Start free trial</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:30px;font-weight:600;letter-spacing:-.01em;background:#fff;border:2px solid #e2ded7;color:#26241f">View syllabus</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:30px;font-weight:600;letter-spacing:-.01em;border:2px solid #f0602a;color:#d94b1c">Outline</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:30px;font-weight:600;letter-spacing:-.01em;color:#4e4a43">Ghost</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:30px;font-weight:600;letter-spacing:-.01em;border:2px solid rgba(255,255,255,.5);color:#fff;background:#37342e">Inverse</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:30px;font-weight:600;letter-spacing:-.01em;background:#e8402b;color:#fff">Delete</span>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:72px;flex:1">
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Sizes — 32 / 40 / 48 / 56</p>
+<div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;height:48px;padding:0 26px;border-radius:6px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:24px;font-weight:600">Small</span>
+<span style="display:inline-flex;align-items:center;height:60px;padding:0 34px;border-radius:10px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:28px;font-weight:600">Medium</span>
+<span style="display:inline-flex;align-items:center;height:72px;padding:0 40px;border-radius:14px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:30px;font-weight:600">Large</span>
+</div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">States</p>
+<div style="display:flex;gap:20px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:28px;font-weight:600;letter-spacing:-.01em;background:#d94b1c;color:#fff;box-shadow:0 8px 20px rgba(240,96,42,.28)">Hover</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:28px;font-weight:600;letter-spacing:-.01em;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;transform:scale(.97)">Press</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;height:72px;padding:0 40px;border-radius:14px;font-size:28px;font-weight:600;letter-spacing:-.01em;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;opacity:.45">Disabled</span>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">variant · size · fullWidth · leadingIcon · trailingIcon · disabled · as</p>
+</section>
+
+<section data-label="Badges and tags" data-screen-label="13" data-speaker-notes="Two components people constantly confuse, so the distinction is worth stating out loud. A badge is read-only — it tells you something's state. A tag is interactive — you click it to filter. Same rough shape, completely different contract, and mixing them teaches users that some pills do nothing when clicked. That's why the badge is a pill and the tag is a rectangle: the shape itself signals which one you're looking at." style="display:flex;flex-direction:column;padding:100px 100px 80px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Badges and tags</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">A badge reports state and is read-only. A tag is a filter you click. Different shapes so the difference is visible before you try.</p>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Badge — tinted</p>
+<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:44px">
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#fff5f0;color:#b23b17;font-size:26px;font-weight:600;border:2px solid #ffcab2">Associate</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#efece7;color:#4e4a43;font-size:26px;font-weight:600;border:2px solid #e2ded7">780 questions</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#d8f3e3;color:#0b7a3c;font-size:26px;font-weight:600;border:2px solid #b6e5cb">Passed</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#fdf0d5;color:#8a5a06;font-size:26px;font-weight:600;border:2px solid #f6ddab">Expiring</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#fef2f0;color:#a4271a;font-size:26px;font-weight:600;border:2px solid #fbbcb2">Failed</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#dbeafe;color:#1d4ed8;font-size:26px;font-weight:600;border:2px solid #bcd4fd">Updated</span>
+</div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Badge — solid</p>
+<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:44px">
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase">Bestseller</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#1a1917;color:#fff;font-size:26px;font-weight:600;">New</span>
+<span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#0b7a3c;color:#fff;font-size:26px;font-weight:600;">Complete</span>
+</div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Tag — filter chip</p>
+<div style="display:flex;gap:20px;flex-wrap:wrap;flex:1;align-content:flex-start">
+<span style="display:inline-flex;align-items:center;height:60px;padding:0 26px;border-radius:6px;background:#fff5f0;border:2px solid #fca781;color:#b23b17;font-size:28px;font-weight:500">AWS</span>
+<span style="display:inline-flex;align-items:center;height:60px;padding:0 26px;border-radius:6px;background:#fff;border:2px solid #e2ded7;color:#4e4a43;font-size:28px;font-weight:500">Microsoft Azure</span>
+<span style="display:inline-flex;align-items:center;height:60px;padding:0 26px;border-radius:6px;background:#fff;border:2px solid #e2ded7;color:#4e4a43;font-size:28px;font-weight:500">Kubernetes</span>
+<span style="display:inline-flex;align-items:center;gap:14px;height:60px;padding:0 26px;border-radius:6px;background:#fff;border:2px solid #e2ded7;color:#4e4a43;font-size:28px;font-weight:500">Terraform<span style="color:#8a847a">&times;</span></span>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Badge — tone · solid · uppercase &nbsp;&nbsp;|&nbsp;&nbsp; Tag — active · onRemove</p>
+</section>
+
+<section data-label="Cards and avatars" data-screen-label="14" data-speaker-notes="One card recipe, and I mean one. White, hairline border, fourteen-pixel corner, small shadow. The only permitted decoration is that four-pixel gradient rule across the top. I'm being deliberately strict because cards are where systems fall apart fastest — everyone wants their own variant, and six card styles on a page is what makes a product look assembled by committee. Hover lifts two pixels, which is enough to say clickable without anything jumping." style="display:flex;flex-direction:column;padding:100px 100px 80px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Cards and avatars</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">One recipe, three states. The only permitted accent is a 4px gradient rule on the top edge — never a coloured left border.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-bottom:56px">
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08);padding:36px">
+<p style="margin:0 0 12px;font-size:32px;font-weight:600">Resting</p>
+<p style="margin:0;font-size:26px;font-weight:400;line-height:1.5;color:#6a655c">Hairline ink-100, radius 14, shadow-sm.</p>
+</div>
+<div style="background:#fff;border:2px solid #e2ded7;border-radius:14px;box-shadow:0 12px 28px rgba(26,25,23,.10);padding:36px;transform:translateY(-6px)">
+<p style="margin:0 0 12px;font-size:32px;font-weight:600">Hover</p>
+<p style="margin:0;font-size:26px;font-weight:400;line-height:1.5;color:#6a655c">Lifts 2px, shadow deepens to lg.</p>
+</div>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08);padding:36px;position:relative;overflow:hidden">
+<span style="position:absolute;inset:0 0 auto 0;height:8px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20)"></span>
+<p style="margin:8px 0 12px;font-size:32px;font-weight:600">Accented</p>
+<p style="margin:0;font-size:26px;font-weight:400;line-height:1.5;color:#6a655c">Gradient rule, top edge only.</p>
+</div>
+</div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Avatar — gradient initials when no image</p>
+<div style="display:flex;gap:28px;align-items:center;flex:1">
+<span style="width:96px;height:96px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:36px;font-weight:700">PN</span>
+<span style="width:76px;height:76px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:28px;font-weight:700">DO</span>
+<span style="width:60px;height:60px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700">SO</span>
+<span style="display:flex;margin-left:20px">
+<span style="width:64px;height:64px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700;box-shadow:0 0 0 5px #f9f7f4">AB</span>
+<span style="width:64px;height:64px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700;box-shadow:0 0 0 5px #f9f7f4;margin-left:-18px">CD</span>
+<span style="width:64px;height:64px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700;box-shadow:0 0 0 5px #f9f7f4;margin-left:-18px">EF</span>
+</span>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Card — interactive · padding · accent &nbsp;&nbsp;|&nbsp;&nbsp; Avatar — name · src · size</p>
+</section>
+
+<section data-label="Text inputs" data-screen-label="15" data-speaker-notes="Fields are where accessibility either happens or doesn't. Every one of these has a visible label, room for a hint, and a distinct error state — because a red border alone doesn't tell a screen reader anything, and a placeholder that vanishes when you type isn't a label. The focus ring is the orange at twenty-eight percent, and I'd ask you never to remove it. The pill-shaped search is the one intentional exception to the ten-pixel radius, because search reads as a different kind of object." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Text inputs</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Every field carries a real label, room for a hint, and a distinct error state. Focus is never removed.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:44px 56px;flex:1;align-content:start">
+<div>
+<p style="margin:0 0 14px;font-size:28px;font-weight:500">Work email</p>
+<div style="height:76px;border:2px solid #e2ded7;border-radius:10px;background:#fff;display:flex;align-items:center;padding:0 26px;font-size:28px;color:#8a847a">you@company.com</div>
+<p style="margin:14px 0 0;font-size:26px;color:#6a655c">Used for your certificate.</p>
+</div>
+<div>
+<p style="margin:0 0 14px;font-size:28px;font-weight:500">Full name</p>
+<div style="height:76px;border:2px solid #f0602a;border-radius:10px;background:#fff;display:flex;align-items:center;padding:0 26px;font-size:28px;color:#1a1917;box-shadow:0 0 0 6px rgba(240,96,42,.28)">Priya Nair</div>
+<p style="margin:14px 0 0;font-size:26px;color:#6a655c">Focused — 3px ring, orange border.</p>
+</div>
+<div>
+<p style="margin:0 0 14px;font-size:28px;font-weight:500">Password</p>
+<div style="height:76px;border:2px solid #e8402b;border-radius:10px;background:#fff;display:flex;align-items:center;padding:0 26px;font-size:28px;color:#1a1917">hunter22</div>
+<p style="margin:14px 0 0;font-size:26px;color:#a4271a">Must be at least 12 characters.</p>
+</div>
+<div>
+<p style="margin:0 0 14px;font-size:28px;font-weight:500">Sort by</p>
+<div style="height:76px;border:2px solid #e2ded7;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font-size:28px;color:#1a1917">Most popular<span style="color:#8a847a;font-size:22px">&#9660;</span></div>
+<p style="margin:14px 0 0;font-size:26px;color:#6a655c">Select — native, styled to match.</p>
+</div>
+</div>
+<div style="margin-top:12px">
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Search — the one pill-shaped field</p>
+<div style="height:88px;border:2px solid #e2ded7;border-radius:999px;background:#fff;display:flex;align-items:center;gap:22px;padding:0 36px;box-shadow:0 1px 3px rgba(26,25,23,.08);max-width:840px">
+<span style="color:#aca69c;font-size:34px">&#8981;</span><span style="font-size:28px;color:#8a847a">Search courses, certifications, labs</span>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">label · hint · error · leadingIcon · trailingIcon · size</p>
+</section>
+
+<section data-label="Selection controls" data-screen-label="16" data-speaker-notes="Checkbox, radio, switch — and the rule that decides between them. Checkbox for many-of-many, radio for one-of-many, switch only for something that applies the instant you flip it. A switch sitting above a Save button is a bug, not a style choice. The boxed radio on the right is the one I'd draw your attention to: it's the practice-test answer option, and it's a distinct treatment because tapping a small circle on a phone during a timed exam is genuinely hard." style="display:flex;flex-direction:column;padding:100px 100px 80px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Selection controls</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Checkbox for many, radio for one, switch only for settings that apply instantly. Checked states fill with the brand gradient.</p>
+<div style="display:grid;grid-template-columns:1fr 1.25fr;gap:72px;flex:1">
+<div style="display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;gap:22px;align-items:flex-start">
+<span style="width:44px;height:44px;border-radius:6px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:26px;flex:0 0 auto">&#10003;</span>
+<span><span style="display:block;font-size:30px;font-weight:500">Practice tests</span><span style="display:block;font-size:26px;color:#6a655c;margin-top:6px">1,200+ questions</span></span>
+</div>
+<div style="display:flex;gap:22px;align-items:flex-start">
+<span style="width:44px;height:44px;border-radius:6px;border:3px solid #cbc6bd;background:#fff;flex:0 0 auto"></span>
+<span><span style="display:block;font-size:30px;font-weight:500">Hands-on labs</span><span style="display:block;font-size:26px;color:#6a655c;margin-top:6px">Real cloud account</span></span>
+</div>
+<div style="display:flex;gap:22px;align-items:center;margin-top:12px">
+<span style="box-sizing:border-box;display:inline-flex;align-items:center;justify-content:flex-end;width:88px;height:50px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);padding:4px;flex:0 0 auto"><span style="display:block;width:42px;height:42px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(26,25,23,.2)"></span></span>
+<span style="font-size:30px;font-weight:500">Email me exam reminders</span>
+</div>
+<div style="display:flex;gap:22px;align-items:center">
+<span style="box-sizing:border-box;display:inline-flex;align-items:center;justify-content:flex-start;width:88px;height:50px;border-radius:999px;background:#cbc6bd;padding:4px;flex:0 0 auto"><span style="display:block;width:42px;height:42px;border-radius:999px;background:#fff;box-shadow:0 1px 3px rgba(26,25,23,.2)"></span></span>
+<span style="font-size:30px;font-weight:500;color:#6a655c">Weekly progress digest</span>
+</div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Boxed radio — the exam answer option</p>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:22px;align-items:center;padding:26px 30px;border:2px solid #e2ded7;border-radius:10px;background:#fff">
+<span style="width:40px;height:40px;border-radius:999px;border:4px solid #cbc6bd;background:#fff;flex:0 0 auto"></span>
+<span style="font-size:30px">Amazon SNS standard topic</span>
+</div>
+<div style="display:flex;gap:22px;align-items:center;padding:26px 30px;border:2px solid #f78454;border-radius:10px;background:#fff5f0">
+<span style="width:40px;height:40px;border-radius:999px;border:4px solid #f0602a;background:#fff;display:grid;place-items:center;flex:0 0 auto"><span style="width:18px;height:18px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20)"></span></span>
+<span style="font-size:30px;font-weight:500">Amazon SQS FIFO queue</span>
+</div>
+<div style="display:flex;gap:22px;align-items:center;padding:26px 30px;border:2px solid #e2ded7;border-radius:10px;background:#fff">
+<span style="width:40px;height:40px;border-radius:999px;border:4px solid #cbc6bd;background:#fff;flex:0 0 auto"></span>
+<span style="font-size:30px">Amazon Kinesis Data Firehose</span>
+</div>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Checkbox / Radio — label · description · boxed &nbsp;&nbsp;|&nbsp;&nbsp; Switch — checked · label</p>
+</section>
+
+<section data-label="Feedback" data-screen-label="17" data-speaker-notes="Feedback components exist so that nothing on the platform fails silently. Four alert tones, and the important one for you is warning — it sits far enough from brand orange to still read as a caution rather than as branding, which matters when the message is fifteen minutes remaining. The score ring is purpose-built: it knows the pass mark, so it turns green or red on its own rather than making a designer remember to colour it." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Feedback</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Nothing fails silently. Four alert tones, progress in two forms, and a score ring that knows the pass mark.</p>
+<div style="display:flex;flex-direction:column;gap:16px;margin-bottom:36px">
+<div style="display:flex;gap:22px;padding:24px 30px;background:#fdf0d5;border:2px solid rgba(245,165,36,.35);border-radius:10px">
+<span class="wl-ico" data-sz="26" style="display:inline-flex;color:#f5a524"><i data-lucide="clock"></i></span>
+<span><span style="display:block;font-size:30px;font-weight:600;color:#8a5a06">15 minutes remaining</span><span style="display:block;font-size:28px;color:#4e4a43;margin-top:6px">Unanswered questions are marked in the review panel.</span></span>
+</div>
+<div style="display:flex;gap:20px">
+<div style="flex:1;padding:18px 24px;background:#d8f3e3;border:2px solid rgba(18,161,80,.3);border-radius:10px;font-size:28px;font-weight:600;color:#0b7a3c">Score saved</div>
+<div style="flex:1;padding:18px 24px;background:#fef2f0;border:2px solid rgba(232,64,43,.3);border-radius:10px;font-size:28px;font-weight:600;color:#a4271a">Payment failed</div>
+<div style="flex:1;padding:18px 24px;background:#dbeafe;border:2px solid rgba(37,99,235,.3);border-radius:10px;font-size:28px;font-weight:600;color:#1d4ed8">New exam version</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:72px;flex:1;align-items:center">
+<div style="display:flex;flex-direction:column;gap:26px">
+<div>
+<div style="display:flex;justify-content:space-between;margin-bottom:12px;font-size:28px"><span style="color:#6a655c">Course progress</span><span style="font-weight:600">62%</span></div>
+<div style="height:20px;border-radius:999px;background:#efece7;overflow:hidden"><div style="width:62%;height:100%;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);border-radius:999px"></div></div>
+</div>
+<div>
+<div style="display:flex;justify-content:space-between;margin-bottom:14px;font-size:28px"><span style="color:#6a655c">Readiness plan</span><span style="font-weight:600;color:#0b7a3c">100%</span></div>
+<div style="height:12px;border-radius:999px;background:#efece7;overflow:hidden"><div style="width:100%;height:100%;background:#12a150;border-radius:999px"></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<span style="display:block;height:26px;width:70%;border-radius:6px;background:#efece7"></span>
+<span style="display:block;height:26px;width:45%;border-radius:6px;background:#efece7"></span>
+<span style="font-size:26px;color:#8a847a;margin-top:4px">Skeleton — shimmer while data loads</span>
+</div>
+</div>
+<div style="display:flex;gap:44px;justify-content:center">
+<div style="width:168px;height:168px;border-radius:999px;background:conic-gradient(#12a150 82%,#efece7 0);display:grid;place-items:center"><div style="width:132px;height:132px;border-radius:999px;background:#fff;display:grid;place-items:center;text-align:center"><div><div style="font-size:48px;font-weight:700;letter-spacing:-.02em">82%</div><div style="font-size:22px;color:#6a655c;margin-top:4px">Overall</div></div></div></div>
+<div style="width:168px;height:168px;border-radius:999px;background:conic-gradient(#e8402b 54%,#efece7 0);display:grid;place-items:center"><div style="width:132px;height:132px;border-radius:999px;background:#fff;display:grid;place-items:center;text-align:center"><div><div style="font-size:48px;font-weight:700;letter-spacing:-.02em">54%</div><div style="font-size:22px;color:#6a655c;margin-top:4px">Attempt 1</div></div></div></div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Alert — tone · title · onDismiss &nbsp;|&nbsp; ProgressBar — value · tone · size &nbsp;|&nbsp; ScoreRing — value · passMark</p>
+</section>
+
+<section data-label="Navigation" data-screen-label="18" data-speaker-notes="Navigation is where a learner either knows where they are or doesn't. Underline tabs for page-level sections, pill tabs for switching a view inside a card — two different jobs that look similar enough that people reach for the wrong one. Counts on the tabs matter more than they look: telling someone there are forty-two curriculum items before they click is the difference between confident navigation and guessing." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Navigation</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Underline tabs for page sections, pill tabs for views inside a card. Counts tell the learner what is behind a tab before they click.</p>
+<p style="margin:0 0 36px;display:flex;gap:18px;align-items:center;font-size:28px;color:#6a655c">Certifications<span style="color:#cbc6bd">/</span>AWS<span style="color:#cbc6bd">/</span><span style="color:#1a1917;font-weight:500">Solutions Architect &ndash; Associate</span></p>
+<div style="display:flex;gap:56px;border-bottom:3px solid #e2ded7;margin-bottom:48px">
+<span style="padding-bottom:22px;font-size:32px;font-weight:600;color:#8a847a">Overview</span>
+<span style="padding-bottom:22px;margin-bottom:-3px;border-bottom:5px solid #f0602a;font-size:32px;font-weight:600;display:flex;gap:14px;align-items:baseline">Curriculum<span style="font-size:24px;color:#aca69c">42</span></span>
+<span style="padding-bottom:22px;font-size:32px;font-weight:600;color:#8a847a;display:flex;gap:14px;align-items:baseline">Reviews<span style="font-size:24px;color:#aca69c">1,840</span></span>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.3fr;gap:72px;flex:1">
+<div style="display:flex;flex-direction:column;gap:10px">
+<span style="padding:22px 26px;border-radius:10px;font-size:28px;font-weight:500;color:#6a655c">Dashboard</span>
+<span style="padding:22px 26px;border-radius:10px;background:#fff5f0;color:#b23b17;font-size:28px;font-weight:600">Practice Tests</span>
+<span style="padding:22px 26px;border-radius:10px;font-size:28px;font-weight:500;color:#6a655c;display:flex;align-items:center">Hands-On Labs<span style="margin-left:auto;background:#e8402b;color:#fff;font-size:22px;font-weight:700;padding:5px 14px;border-radius:999px">3</span></span>
+<span style="padding:22px 26px;border-radius:10px;font-size:28px;font-weight:500;color:#6a655c">Certificates</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:44px">
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Pill tabs — in-card view switch</p>
+<div style="display:inline-flex;gap:10px;padding:8px;background:#efece7;border-radius:12px">
+<span style="padding:16px 28px;border-radius:8px;font-size:28px;font-weight:600;color:#6a655c">All</span>
+<span style="padding:16px 28px;border-radius:8px;background:#fff;box-shadow:0 1px 3px rgba(26,25,23,.1);font-size:28px;font-weight:600">In progress</span>
+<span style="padding:16px 28px;border-radius:8px;font-size:28px;font-weight:600;color:#6a655c">Completed</span>
+</div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Pagination</p>
+<div style="display:flex;gap:12px">
+<span style="width:64px;height:64px;border:2px solid #e2ded7;border-radius:6px;display:grid;place-items:center;font-size:26px;color:#aca69c">&lsaquo;</span>
+<span style="width:64px;height:64px;border:2px solid #e2ded7;border-radius:6px;display:grid;place-items:center;font-size:26px;font-weight:600">1</span>
+<span style="width:64px;height:64px;border-radius:6px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:26px;font-weight:600">2</span>
+<span style="width:64px;height:64px;border:2px solid #e2ded7;border-radius:6px;display:grid;place-items:center;font-size:26px;font-weight:600">3</span>
+<span style="width:64px;height:64px;border:2px solid #e2ded7;border-radius:6px;display:grid;place-items:center;font-size:26px;font-weight:600">4</span>
+<span style="width:64px;height:64px;border:2px solid #e2ded7;border-radius:6px;display:grid;place-items:center;font-size:26px;color:#4e4a43">&rsaquo;</span>
+</div>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Tabs — items · value · variant &nbsp;|&nbsp; SidebarNav — icon · badge &nbsp;|&nbsp; Pagination — page · pageCount</p>
+</section>
+
+<section data-label="Learning components" data-screen-label="19" data-speaker-notes="These four are the ones that don't exist in a generic component library, and they're the reason this is a Whizlabs system rather than a starter kit. A course card has to hold a vendor, a level, a question count and a price without becoming a wall of text. A lesson row has to show done, current and not-yet at a glance. A stat tile has to make one number the hero. If we got only these four right, the system would still earn its keep." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Learning components</h2>
+<p style="margin:0 0 56px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">The four that make this a Whizlabs system rather than a generic kit — built for courses, curricula and timed exams.</p>
+<div style="display:grid;grid-template-columns:1fr 1.4fr;gap:44px;flex:1">
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;box-shadow:0 1px 3px rgba(26,25,23,.08);overflow:hidden;display:flex;flex-direction:column">
+<div style="height:150px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);position:relative;display:flex;align-items:flex-end;padding:22px">
+<span style="font-size:22px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(26,25,23,.32);padding:8px 16px;border-radius:999px">Practice Test</span>
+<span style="position:absolute;top:20px;right:20px;background:#1a1917;color:#fff;font-size:22px;font-weight:600;padding:8px 16px;border-radius:999px">Bestseller</span>
+</div>
+<div style="padding:22px 28px;display:flex;flex-direction:column;gap:14px;flex:1">
+<span style="font-size:22px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">AWS</span>
+<span style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:-.01em">Solutions Architect &ndash; Associate (SAA-C03)</span>
+<span style="display:flex;gap:12px;flex-wrap:wrap"><span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#efece7;color:#4e4a43;font-size:26px;font-weight:600;">Associate</span><span style="display:inline-flex;align-items:center;padding:12px 26px;border-radius:999px;background:#efece7;color:#4e4a43;font-size:26px;font-weight:600;">780 questions</span></span>
+<span style="margin-top:auto;padding-top:20px;border-top:2px solid #efece7;display:flex;justify-content:space-between;align-items:center;font-size:26px">
+<span style="color:#6a655c"><span style="color:#d94b1c;font-weight:700">&#9733; 4.6</span> &middot; 128,400</span><span style="font-size:30px;font-weight:700">$19.95</span></span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:28px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:28px;display:flex;gap:20px;align-items:center">
+<span class="wl-ico" data-sz="30" style="width:64px;height:64px;border-radius:10px;background:#fff5f0;color:#d94b1c;display:grid;place-items:center;flex:0 0 auto"><i data-lucide="trending-up"></i></span>
+<span><span style="display:block;font-size:40px;font-weight:700;letter-spacing:-.02em">82%</span><span style="display:block;font-size:24px;color:#6a655c">Average mock score <span style="color:#0b7a3c;font-weight:600">+6</span></span></span>
+</div>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:28px;display:flex;gap:20px;align-items:center">
+<span class="wl-ico" data-sz="30" style="width:64px;height:64px;border-radius:10px;background:#efece7;color:#4e4a43;display:grid;place-items:center;flex:0 0 auto"><i data-lucide="calendar"></i></span>
+<span><span style="display:block;font-size:40px;font-weight:700;letter-spacing:-.02em">26d</span><span style="display:block;font-size:24px;color:#6a655c">Until exam day</span></span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:22px;align-items:center;padding:20px 28px;border:2px solid #efece7;border-radius:10px;background:#fff">
+<span style="width:48px;height:48px;border-radius:999px;background:#12a150;color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700;flex:0 0 auto">&#10003;</span>
+<span style="flex:1"><span style="display:block;font-size:28px;font-weight:600">Full-length mock 1</span><span style="display:block;font-size:24px;color:#6a655c;margin-top:4px">65 questions</span></span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#aca69c">130:00</span>
+</div>
+<div style="display:flex;gap:22px;align-items:center;padding:20px 28px;border:2px solid #f78454;border-radius:10px;background:#fff5f0">
+<span style="width:48px;height:48px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700;flex:0 0 auto">2</span>
+<span style="flex:1"><span style="display:block;font-size:28px;font-weight:600">Full-length mock 2</span><span style="display:block;font-size:24px;color:#6a655c;margin-top:4px">In progress</span></span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#aca69c">130:00</span>
+</div>
+<div style="display:flex;gap:22px;align-items:center;padding:20px 28px;border:2px solid #efece7;border-radius:10px;background:#fff">
+<span style="width:48px;height:48px;border-radius:999px;background:#efece7;color:#8a847a;display:grid;place-items:center;font-size:24px;font-weight:700;flex:0 0 auto">3</span>
+<span style="flex:1"><span style="display:block;font-size:28px;font-weight:600">Domain quiz: Security</span><span style="display:block;font-size:24px;color:#6a655c;margin-top:4px">25 questions</span></span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#aca69c">50:00</span>
+</div>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">CourseCard &middot; StatTile &middot; LessonRow &middot; QuestionCard</p>
+</section>
+
+<section data-label="Range and steppers" data-screen-label="20" data-speaker-notes="Three ways to enter a number, and the choice between them isn't arbitrary. A slider is for approximate values where feeling the range matters. A stepper is for exact small integers — seat counts, attempt limits. A rating is a scale with social meaning. Getting this wrong is how you end up with a slider for someone's team size, which nobody can set precisely, or a text field for a rating, which nobody fills in." style="display:flex;flex-direction:column;padding:100px 100px 80px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Range, steppers and rating</h2>
+<p style="margin:0 0 52px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">A slider for approximate values, a stepper for exact small integers, a rating for a scale with social meaning.</p>
+<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:72px;flex:1;align-content:start">
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Slider</p>
+<div style="display:flex;justify-content:space-between;margin-bottom:16px;font-size:28px"><span style="color:#6a655c">Questions per session</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:600">40</span></div>
+<div style="position:relative;height:24px;display:flex;align-items:center;margin-bottom:52px">
+<div style="position:absolute;inset:auto 0;height:10px;border-radius:999px;background:#efece7"></div>
+<div style="position:absolute;left:0;width:38%;height:10px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20)"></div>
+<span style="position:absolute;left:38%;transform:translateX(-50%);width:36px;height:36px;border-radius:999px;background:#fff;border:4px solid #f0602a;box-shadow:0 1px 3px rgba(26,25,23,.2)"></span>
+</div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Rating</p>
+<div style="display:flex;align-items:center;gap:16px">
+<span style="font-size:44px;letter-spacing:4px;color:#f9a825">&#9733;&#9733;&#9733;&#9733;<span style="color:#e2ded7">&#9733;</span></span>
+<span style="font-size:34px;font-weight:700">4.6</span>
+<span style="font-size:28px;color:#6a655c">(1,840)</span>
+</div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Stepper</p>
+<div style="display:inline-flex;align-items:center;height:80px;border:2px solid #e2ded7;border-radius:10px;background:#fff;overflow:hidden;box-shadow:0 1px 3px rgba(26,25,23,.06);margin-bottom:52px">
+<span style="width:72px;height:100%;display:grid;place-items:center;border-right:2px solid #efece7;font-size:34px;color:#4e4a43">&minus;</span>
+<span style="width:120px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:600">12</span>
+<span style="width:72px;height:100%;display:grid;place-items:center;border-left:2px solid #efece7;font-size:34px;color:#4e4a43">+</span>
+</div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Segmented toggle</p>
+<div style="display:inline-flex">
+<span style="padding:22px 32px;background:#fff5f0;color:#b23b17;font-size:28px;font-weight:600;letter-spacing:-.01em;border:3px solid #f78454;border-radius:10px 0 0 10px;position:relative;z-index:2;box-shadow:0 1px 2px rgba(26,25,23,.06)">Timed</span>
+<span style="padding:22px 32px;background:#fff;color:#6a655c;font-size:28px;font-weight:500;border:3px solid #e2ded7;margin-left:-3px">Study mode</span>
+<span style="padding:22px 32px;background:#fff;color:#6a655c;font-size:28px;font-weight:500;border:3px solid #e2ded7;border-radius:0 10px 10px 0;margin-left:-3px">Review</span>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Slider &middot; NumberField &middot; Rating &middot; ToggleButton</p>
+</section>
+
+<section data-label="Search and pickers" data-screen-label="21" data-speaker-notes="Autocomplete is doing real work on a platform with five hundred exams — nobody browses to find SAA-C03, they type it. The meta column on the right carries the question count, so the choice is informed before the click. Transfer list is deliberately scoped to admin surfaces only: it's a good pattern for a manager assigning exams to a team, and a bad one for a learner mid-study." style="display:flex;flex-direction:column;padding:100px 100px 80px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Search and pickers</h2>
+<p style="margin:0 0 52px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">With 500 exams in the catalogue, typing beats browsing. Suggestions carry a count so the choice is informed before the click.</p>
+<div style="display:grid;grid-template-columns:1fr 1.15fr;gap:64px;flex:1;align-content:start">
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Autocomplete</p>
+<div style="height:80px;border:2px solid #f0602a;border-radius:10px;background:#fff;display:flex;align-items:center;gap:20px;padding:0 26px;box-shadow:0 0 0 6px rgba(240,96,42,.28)">
+<span style="color:#aca69c;font-size:30px">&#8981;</span><span style="font-size:28px">solutions arch</span>
+</div>
+<div style="margin-top:12px;border:2px solid #e2ded7;border-radius:10px;background:#fff;box-shadow:0 12px 28px rgba(26,25,23,.1);overflow:hidden">
+<div style="display:flex;justify-content:space-between;padding:22px 26px;font-size:27px;background:#f9f7f4"><span style="font-weight:500">AWS Solutions Architect &ndash; Associate</span><span style="color:#8a847a">780 q</span></div>
+<div style="display:flex;justify-content:space-between;padding:22px 26px;font-size:27px;border-top:2px solid #efece7"><span>Azure Solutions Architect Expert</span><span style="color:#8a847a">410 q</span></div>
+<div style="display:flex;justify-content:space-between;padding:22px 26px;font-size:27px;border-top:2px solid #efece7"><span>GCP Professional Cloud Architect</span><span style="color:#8a847a">540 q</span></div>
+</div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Transfer list — admin surfaces only</p>
+<div style="display:flex;gap:20px">
+<div style="flex:1;border:2px solid #e2ded7;border-radius:10px;background:#fff;overflow:hidden">
+<div style="display:flex;justify-content:space-between;padding:18px 22px;background:#f9f7f4;border-bottom:2px solid #efece7;font-size:24px;font-weight:600;color:#4e4a43"><span>All exams</span><span style="font-family:'IBM Plex Mono',monospace;color:#8a847a">3</span></div>
+<div style="display:flex;justify-content:space-between;padding:20px 22px;font-size:26px">Azure AZ-305<span style="color:#f0602a;font-weight:700">+</span></div>
+<div style="display:flex;justify-content:space-between;padding:20px 22px;font-size:26px;border-top:2px solid #efece7">GCP Architect<span style="color:#f0602a;font-weight:700">+</span></div>
+<div style="display:flex;justify-content:space-between;padding:20px 22px;font-size:26px;border-top:2px solid #efece7">CKA<span style="color:#f0602a;font-weight:700">+</span></div>
+</div>
+<div style="flex:1;border:2px solid #e2ded7;border-radius:10px;background:#fff;overflow:hidden">
+<div style="display:flex;justify-content:space-between;padding:18px 22px;background:#f9f7f4;border-bottom:2px solid #efece7;font-size:24px;font-weight:600;color:#4e4a43"><span>In this path</span><span style="font-family:'IBM Plex Mono',monospace;color:#8a847a">2</span></div>
+<div style="display:flex;justify-content:space-between;padding:20px 22px;font-size:26px">AWS SAA-C03<span style="color:#f0602a;font-weight:700">&minus;</span></div>
+<div style="display:flex;justify-content:space-between;padding:20px 22px;font-size:26px;border-top:2px solid #efece7">Terraform<span style="color:#f0602a;font-weight:700">&minus;</span></div>
+</div>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Autocomplete &middot; TransferList &middot; SearchField</p>
+</section>
+
+<section data-label="Tables and lists" data-screen-label="22" data-speaker-notes="Tables are where the mono face earns its place. Scores, exam codes and durations all go mono so the digits align down the column — scan a list of results and your eye finds the outlier immediately. That's not a stylistic preference, it's the difference between a table you can read and one you have to parse. The uppercase header band and the hairline rows keep the structure visible without adding borders everywhere." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Tables and lists</h2>
+<p style="margin:0 0 52px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Codes, scores and durations go mono so digits align down the column. Uppercase header band, hairline rows, no vertical rules.</p>
+<div style="border:2px solid #efece7;border-radius:14px;overflow:hidden;background:#fff;margin-bottom:40px;flex:0 0 auto">
+<div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;background:#f9f7f4;border-bottom:2px solid #e2ded7;padding:18px 28px;font-size:24px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">
+<span>Exam</span><span>Code</span><span style="text-align:right">Score</span><span style="text-align:right">Result</span></div>
+<div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;padding:17px 28px;font-size:27px;align-items:center">
+<span style="font-weight:500">Solutions Architect &ndash; Associate</span><span style="font-family:'IBM Plex Mono',monospace;color:#4e4a43">SAA-C03</span><span style="font-family:'IBM Plex Mono',monospace;text-align:right">792</span><span style="text-align:right"><span style="background:#d8f3e3;color:#0b7a3c;padding:8px 18px;border-radius:999px;font-size:24px;font-weight:600">Passed</span></span></div>
+<div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;padding:17px 28px;font-size:27px;align-items:center;border-top:2px solid #efece7">
+<span style="font-weight:500">Developer &ndash; Associate</span><span style="font-family:'IBM Plex Mono',monospace;color:#4e4a43">DVA-C02</span><span style="font-family:'IBM Plex Mono',monospace;text-align:right">684</span><span style="text-align:right"><span style="background:#fef2f0;color:#a4271a;padding:8px 18px;border-radius:999px;font-size:24px;font-weight:600">Failed</span></span></div>
+<div style="display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;padding:17px 28px;font-size:27px;align-items:center;border-top:2px solid #efece7">
+<span style="font-weight:500">Terraform Associate</span><span style="font-family:'IBM Plex Mono',monospace;color:#4e4a43">TA-003</span><span style="font-family:'IBM Plex Mono',monospace;text-align:right">810</span><span style="text-align:right"><span style="background:#d8f3e3;color:#0b7a3c;padding:8px 18px;border-radius:999px;font-size:24px;font-weight:600">Passed</span></span></div>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:44px;flex:0 0 auto;align-items:start">
+<div style="border:2px solid #efece7;border-radius:14px;overflow:hidden;background:#fff">
+<div style="display:flex;align-items:center;gap:20px;padding:18px 28px"><span style="flex:1"><span style="display:block;font-size:28px;font-weight:600">Certificate of completion</span><span style="display:block;font-size:24px;color:#6a655c;margin-top:4px">PDF &middot; 240 KB</span></span><span style="font-size:24px;color:#6a655c">Download</span></div>
+<div style="display:flex;align-items:center;gap:20px;padding:18px 28px;border-top:2px solid #efece7;background:#f9f7f4"><span style="flex:1"><span style="display:block;font-size:28px;font-weight:600">Attempt 3 report</span><span style="display:block;font-size:24px;color:#6a655c;margin-top:4px">Submitted 7 Aug 2026</span></span><span style="font-size:24px;color:#6a655c">View</span></div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Divider with label</p>
+<div style="display:flex;align-items:center;gap:20px"><span style="flex:1;height:2px;background:#efece7"></span><span style="font-size:24px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">or</span><span style="flex:1;height:2px;background:#efece7"></span></div>
+<p style="margin:32px 0 0;font-size:26px;line-height:1.6;color:#6a655c">Use List for generic rows and LessonRow for curriculum, where done, current and not-yet must read at a glance.</p>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Table &middot; List &middot; Divider</p>
+</section>
+
+<section data-label="Surfaces" data-screen-label="23" data-speaker-notes="Paper versus Card is the distinction people skip, and it causes real mess. A card represents one content object — a course, a result, a lesson. Paper is just a surface: a panel, a well, a sheet. If everything is a Card, then card-specific behaviour like hover-lift starts appearing on things that aren't clickable, and the interface lies about what you can press. Accordion gets the orange-50 open state, which is the same selection idiom as everywhere else." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Surfaces</h2>
+<p style="margin:0 0 52px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Card represents one content object. Paper is a surface — a panel, a well, a sheet. Keeping them apart stops hover-lift appearing on things that are not clickable.</p>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Paper tones</p>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:44px;flex:0 0 auto">
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:28px;box-shadow:0 1px 2px rgba(26,25,23,.06)"><p style="margin:0 0 8px;font-size:30px;font-weight:600">Default</p><p style="margin:0;font-size:25px;color:#6a655c">elevation 1</p></div>
+<div style="background:#f9f7f4;border:2px solid #efece7;border-radius:14px;padding:32px"><p style="margin:0 0 8px;font-size:30px;font-weight:600">Subtle</p><p style="margin:0;font-size:25px;color:#6a655c">section well</p></div>
+<div style="background:linear-gradient(135deg,#fff3ee,#fff8ea);border:2px solid #ffe7dc;border-radius:14px;padding:32px"><p style="margin:0 0 8px;font-size:30px;font-weight:700;color:#8c2f14">Exam in 26 days</p><p style="margin:0;font-size:25px;color:#b23b17">38% through your plan</p></div>
+<div style="background:#1a1917;border-radius:14px;padding:32px;box-shadow:0 4px 12px rgba(26,25,23,.08)"><p style="margin:0 0 8px;font-size:30px;font-weight:600;color:#fff">Inverse</p><p style="margin:0;font-size:25px;color:#cbc6bd">on ink-950</p></div>
+</div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Accordion — one panel open</p>
+<div style="border:2px solid #efece7;border-radius:14px;background:#fff;overflow:hidden;flex:0 0 auto">
+<div style="display:flex;align-items:center;gap:20px;padding:28px 32px;background:#fff5f0">
+<span style="flex:1;font-size:32px;font-weight:600;color:#b23b17">Domain 1: Design Resilient Architectures</span>
+<span style="font-size:26px;color:#6a655c">12 lessons &middot; 26%</span><span style="color:#f0602a;font-size:22px">&#9650;</span></div>
+<div style="padding:8px 32px 32px;font-size:28px;line-height:1.6;color:#4e4a43">Multi-AZ patterns, decoupling with SQS and EventBridge, failover and recovery objectives.</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Paper &middot; Accordion &middot; AppBar &middot; Card</p>
+</section>
+
+<section data-label="Overlays" data-screen-label="24" data-speaker-notes="Four ways to interrupt, ordered by how much they cost the learner. A snackbar confirms and disappears. A tooltip explains on hover. A dialog demands a decision. A backdrop stops everything. The rule I'd hold to: use the cheapest one that does the job. On a platform where people sit timed exams, a modal that didn't need to be a modal costs someone real seconds — and the submit-attempt dialog is the one case where interrupting is the right call." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#fff">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Overlays</h2>
+<p style="margin:0 0 40px;font-size:33px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:66ch">Ordered by cost to the learner: snackbar confirms, tooltip explains, dialog demands a decision, backdrop stops everything. Use the cheapest one that does the job.</p>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;flex:1;align-content:start">
+<div>
+<p style="margin:0 0 16px;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Dialog</p>
+<div style="background:#fff;border-radius:20px;box-shadow:0 24px 56px rgba(26,25,23,.14);overflow:hidden">
+<div style="padding:30px 34px 26px">
+<p style="margin:0 0 12px;font-size:36px;font-weight:600;letter-spacing:-.01em">Submit attempt?</p>
+<p style="margin:0;font-size:28px;line-height:1.55;color:#4e4a43">14 questions are still unanswered. Submitting ends the attempt and scores it immediately.</p>
+</div>
+<div style="display:flex;justify-content:flex-end;gap:16px;padding:20px 34px;background:#f9f7f4;border-top:2px solid #efece7">
+<span style="display:inline-flex;align-items:center;height:54px;padding:0 26px;border-radius:10px;border:2px solid #e2ded7;background:#fff;font-size:25px;font-weight:600">Keep going</span>
+<span style="display:inline-flex;align-items:center;height:54px;padding:0 26px;border-radius:10px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:25px;font-weight:600">Submit</span>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:28px">
+<div>
+<p style="margin:0 0 18px;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Snackbar</p>
+<div style="display:inline-flex;align-items:center;gap:18px;padding:18px 24px;background:#12a150;color:#fff;border-radius:10px;box-shadow:0 12px 28px rgba(26,25,23,.1)">
+<span style="font-size:26px">&#10003;</span><span style="font-size:28px;font-weight:500">Attempt saved</span>
+<span style="font-size:26px;font-weight:600;border:2px solid rgba(255,255,255,.5);padding:8px 18px;border-radius:8px">Undo</span></div>
+</div>
+<div>
+<p style="margin:0 0 16px;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Tooltip</p>
+<div style="display:inline-flex;flex-direction:column;align-items:center;gap:12px">
+<span style="background:#1a1917;color:#fff;padding:14px 20px;border-radius:8px;font-size:26px;font-weight:500">Flag for review</span>
+<span class="wl-ico" data-sz="26" style="width:60px;height:60px;border:2px solid #e2ded7;border-radius:10px;background:#fff;display:grid;place-items:center;color:#4e4a43"><i data-lucide="flag"></i></span>
+</div>
+</div>
+<div>
+<p style="margin:0 0 16px;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Backdrop and spinner</p>
+<div style="display:flex;align-items:center;gap:22px;padding:20px 26px;border-radius:10px;background:rgba(26,25,23,.9)">
+<span style="width:44px;height:44px;border:5px solid rgba(255,255,255,.25);border-top-color:#fff;border-radius:999px;display:block"></span>
+<span style="font-size:28px;font-weight:500;color:#fff">Grading your attempt</span></div>
+</div>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Dialog &middot; Snackbar &middot; Tooltip &middot; Backdrop &middot; Spinner</p>
+</section>
+
+<section data-label="Wayfinding" data-screen-label="25" data-speaker-notes="The last group answers where am I and where can I go. Stepper for a flow with a known end — checkout, onboarding, building a study plan. Menu for actions, with destructive ones pushed last after a divider so nobody signs out by muscle memory. Bottom nav for mobile, three to five destinations only, and every row at least fifty-six pixels because a learner tapping through an exam on a phone cannot afford to miss." style="display:flex;flex-direction:column;padding:76px 100px 56px;font-family:Poppins,sans-serif;color:#1a1917;background:#f9f7f4">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Wayfinding</h2>
+<p style="margin:0 0 52px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:58ch">Stepper for a flow with a known end. Menu for actions, destructive ones last. Bottom nav for mobile, 3&ndash;5 destinations, rows never under 56px.</p>
+<div style="display:flex;gap:0;margin-bottom:56px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:16px;position:relative">
+<span style="position:absolute;top:26px;left:50%;right:0;height:4px;background:#ffcab2"></span>
+<span style="position:relative;z-index:1;width:56px;height:56px;border-radius:999px;background:#12a150;color:#fff;display:grid;place-items:center;font-size:26px;font-weight:700">&#10003;</span>
+<span style="font-size:28px;font-weight:500;color:#6a655c">Choose exam</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:16px;position:relative">
+<span style="position:absolute;top:26px;left:0;right:50%;height:4px;background:#ffcab2"></span>
+<span style="position:absolute;top:26px;left:50%;right:0;height:4px;background:#e2ded7"></span>
+<span style="position:relative;z-index:1;width:56px;height:56px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:26px;font-weight:700">2</span>
+<span style="font-size:28px;font-weight:600">Assess level</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:16px;position:relative">
+<span style="position:absolute;top:26px;left:0;right:50%;height:4px;background:#e2ded7"></span>
+<span style="position:absolute;top:26px;left:50%;right:0;height:4px;background:#e2ded7"></span>
+<span style="position:relative;z-index:1;width:56px;height:56px;border-radius:999px;background:#fff;border:4px solid #cbc6bd;color:#8a847a;display:grid;place-items:center;font-size:26px;font-weight:700">3</span>
+<span style="font-size:28px;font-weight:500;color:#6a655c">Build plan</span></div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:16px;position:relative">
+<span style="position:absolute;top:26px;left:0;right:50%;height:4px;background:#e2ded7"></span>
+<span style="position:relative;z-index:1;width:56px;height:56px;border-radius:999px;background:#fff;border:4px solid #cbc6bd;color:#8a847a;display:grid;place-items:center;font-size:26px;font-weight:700">4</span>
+<span style="font-size:28px;font-weight:500;color:#6a655c">Start studying</span></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;flex:1;align-items:start">
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Menu</p>
+<div style="border:2px solid #e2ded7;border-radius:10px;background:#fff;box-shadow:0 12px 28px rgba(26,25,23,.1);padding:10px">
+<div style="display:flex;justify-content:space-between;padding:18px 20px;border-radius:8px;font-size:27px;font-weight:500">Account settings</div>
+<div style="display:flex;justify-content:space-between;padding:18px 20px;border-radius:8px;background:#f9f7f4;font-size:27px;font-weight:500">Billing<span style="font-family:'IBM Plex Mono',monospace;font-size:23px;color:#aca69c">&#8984;B</span></div>
+<div style="display:flex;justify-content:space-between;padding:18px 20px;border-radius:8px;font-size:27px;font-weight:500">Download certificates</div>
+<div style="height:2px;background:#efece7;margin:10px 8px"></div>
+<div style="display:flex;justify-content:space-between;padding:18px 20px;border-radius:8px;font-size:27px;font-weight:500;color:#a4271a">Sign out</div>
+</div>
+</div>
+<div>
+<p style="margin:0 0 24px;font-size:28px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a847a">Bottom nav — mobile</p>
+<div style="display:flex;border:2px solid #e2ded7;border-radius:10px;background:#fff;overflow:hidden">
+<div style="flex:1;padding:22px 10px;display:flex;flex-direction:column;align-items:center;gap:8px"><span class="wl-ico" data-sz="28" style="display:inline-flex;color:#8a847a"><i data-lucide="home"></i></span><span style="font-size:22px;font-weight:500;color:#8a847a">Home</span></div>
+<div style="flex:1;padding:22px 10px;display:flex;flex-direction:column;align-items:center;gap:8px"><span class="wl-ico" data-sz="28" style="display:inline-flex;color:#d94b1c"><i data-lucide="clipboard-check"></i></span><span style="font-size:22px;font-weight:600;color:#d94b1c">Tests</span></div>
+<div style="flex:1;padding:22px 10px;display:flex;flex-direction:column;align-items:center;gap:8px;position:relative"><span class="wl-ico" data-sz="28" style="display:inline-flex;color:#8a847a"><i data-lucide="flask-conical"></i></span><span style="position:absolute;top:16px;right:26%;background:#e8402b;color:#fff;font-size:18px;font-weight:700;padding:4px 9px;border-radius:999px">3</span><span style="font-size:22px;font-weight:500;color:#8a847a">Labs</span></div>
+<div style="flex:1;padding:22px 10px;display:flex;flex-direction:column;align-items:center;gap:8px"><span class="wl-ico" data-sz="28" style="display:inline-flex;color:#8a847a"><i data-lucide="user"></i></span><span style="font-size:22px;font-weight:500;color:#8a847a">Profile</span></div>
+</div>
+<p style="margin:28px 0 0;font-size:26px;line-height:1.6;color:#6a655c">Links are orange-600 and underline on hover — never blue, never bare.</p>
+</div>
+</div>
+<p style="margin:24px 0 0;font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:500;color:#8a847a;border-top:2px solid #e2ded7;padding-top:20px">Stepper &middot; Menu &middot; BottomNav &middot; Link</p>
+</section>
+
+<section data-label="Marketing kit" data-screen-label="26" data-speaker-notes="Now the honest part. This is a marketing site assembled entirely from the components you just saw — no new one-off pieces. That's the real argument for a design system: a new page becomes composition rather than invention. What I'd flag is that the layout itself is my reconstruction. I had your logo and your font, not your screens, so treat the arrangement as a proposal and the parts as settled." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">UI kit — marketing site</h2>
+<p style="margin:0 0 48px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:60ch">Home, catalog, course detail and pricing, composed entirely from the components above.</p>
+<div style="flex:1;border:2px solid #efece7;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 12px 28px rgba(26,25,23,.10)">
+<div style="height:96px;border-bottom:2px solid #efece7;display:flex;align-items:center;padding:0 40px;gap:44px;background:rgba(255,255,255,.9)">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgMjAyLjUgMjcuNiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXaGl6bGFicyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJ3bC1nIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjYuOCIgeTE9IjM0LjgiIHgyPSI1Ny4yIiB5Mj0iNy42Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlODQwMmIiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii41MiIgc3RvcC1jb2xvcj0iI2YwNjAyYSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y3OGIyMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik0yOC4xMiwyOC4wNmwtOS4zLTE2LjhjLTEuMi0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS45LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy4zLTItOS4zLTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00Ny41MiwyOC4wNmwtOS4zLTE2LjhjLTEuMS0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS44LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy40LTItOS40LTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00OC40MiwxMy43NmgwYy44LDIuMywzLjIsMy42LDUuNiwyLjgsMS44LS42LDMtMi4zLDMtNC4ycy0yLTQuNC00LjQtNC40aC04LjRjLS41LDAtLjkuNS0uOSwxdi4yYzMuNCwwLDUsNC42LDUsNC42aC4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik04OC4xMiwxMy45NmgtLjVjLS4yLDAtLjQuMi0uNS40bC0zLDEzLjctNS0xMy42Yy0uMS0uNC0uNi0uNi0uOS0uNS0uMiwwLS40LjItLjUuNWwtNSwxMy42LTIuOC0xMy41di0uMmMwLS4yLS4yLS40LS41LS40aC0uNWMtLjIsMC0uMywwLS40LjJ2LjdsMy40LDE1LjljMCwuMy40LjUuNy41aDBjLjMsMCwuNi0uMi43LS41bDUuMi0xNC4xLDUuMiwxNC4xYy4xLjMuNC41LjcuNWgwYy4zLDAsLjYtLjIuNy0uNWwzLjQtMTUuOXYtLjdjMC0uMS0uMS0uMi0uMy0uMmgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTEwNy4wMiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2Ny41aC0xMC4xdi03LjVjMC0uMy0uMi0uNS0uNS0uNWgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LTcuNWgxMC4xdjcuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMi0uNS0uNC0uNWgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTExNi43MiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMy0uNS0uNS0uNVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMGMxMjIwIiBkPSJNMTM1LjQyLDI5Ljg2aC0xMGw5LjktMTQuOGMuMi0uMi4yLS41LjEtLjctLjEtLjItLjQtLjQtLjYtLjRoLTEwLjRjLS4zLDAtLjUuMi0uNS41aDB2LjVjMCwuMy4yLjUuNS41aDkuMWwtOS45LDE0LjhjLS4yLjItLjIuNS0uMS43cy40LjQuNi40aDExLjNjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjMtLjItLjUtLjQtLjVoLS4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0xNTIuMDIsMjkuODZoLTguN3YtMTUuNGMwLS4zLS4yLS41LS41LS41aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi4yYzAsLjQuMy43LjcuN2g5LjRjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjItLjEtLjQtLjQtLjRoMHYtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE2NS4wMiwxNC40NmMtLjItLjQtLjctLjUtMS4xLS4zLS4xLDAtLjIuMi0uMy4zbC03LDE1Ljl2LjNjLS4yLjEtLjEuMy0uMS41cy4yLjIuNC4yaC41Yy4yLDAsLjQtLjEuNS0uM2w2LjQtMTQuNSw2LjQsMTQuNGgwYzAsLjMuMy40LjUuNGguNWMuMiwwLC4zLDAsLjQtLjIuMS0uMi4xLS4zLDAtLjVsLTcuMS0xNi4zaDB2LjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE4Ny45MiwyMi4zNmMxLjItLjgsMS45LTIuMiwxLjktMy42LS4yLTIuNi0yLjQtNC43LTUtNC41aC01LjhjLS40LDAtLjcuMy0uNy43aDB2MTUuM2MwLC40LjMuNy43LjdoNi44YzIuNi4yLDQuOS0xLjksNS00LjVoMGMwLTEuOC0xLjItMy40LTIuOS00aDB2LS4xWk0xODguNDIsMTguNzZjLS4xLDEuOS0xLjgsMy4zLTMuNiwzLjFoLTV2LTYuM2g1YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjFoMHYuMVpNMTg1LjgyLDIzLjQ2YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjEtLjIsMS45LTEuOCwzLjMtMy42LDMuMWgtNi4xdi02LjNoNi4xdi4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0yMDIuNzIsMjEuODZjLTIuNC0uOS00LjctMS44LTQuNy0zLjJzMS45LTMuMiw0LjMtMy4yLDQuMywxLjQsNC4zLDMuMnYuMmMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LS4yYzAtMi42LTIuNi00LjctNS44LTQuN3MtNS44LDIuMS01LjgsNC43LDIuOSwzLjYsNS45LDQuNmMyLjQuOSw0LjcsMS44LDQuNywzLjNzLTIuMiwzLjItNC44LDMuMi00LjgtMS40LTQuOC0zLjJ2LS4yYzAtLjMtLjItLjUtLjUtLjVoLS41Yy0uMywwLS41LjItLjUuNWgwdi4yYzAsMi42LDIuOCw0LjcsNi4zLDQuN3M2LjMtMi4xLDYuMy00LjdjLjEtMi41LTIuOS0zLjYtNS45LTQuN1oiPjwvcGF0aD48L2c+PC9zdmc+" alt="Whizlabs" style="height:36px;width:auto">
+<span style="font-size:26px;font-weight:600;color:#d94b1c">Certifications</span>
+<span style="font-size:26px;font-weight:600;color:#4e4a43">Practice Tests</span>
+<span style="font-size:26px;font-weight:600;color:#4e4a43">Hands-On Labs</span>
+<span style="font-size:26px;font-weight:600;color:#4e4a43">Pricing</span>
+<span style="margin-left:auto;display:inline-flex;align-items:center;height:56px;padding:0 30px;border-radius:10px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;font-size:26px;font-weight:600">Start free trial</span>
+</div>
+<div style="flex:1;background:linear-gradient(135deg,#fff3ee,#fff8ea);display:grid;grid-template-columns:1.1fr .9fr;gap:56px;padding:56px 40px;align-items:center">
+<div>
+<p style="margin:0 0 18px;font-size:26px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d94b1c">Cloud and DevOps certification prep</p>
+<p style="margin:0 0 24px;font-size:66px;font-weight:700;line-height:1.06;letter-spacing:-.025em">Pass the exam the first time.</p>
+<p style="margin:0;font-size:30px;font-weight:300;line-height:1.55;color:#4e4a43;max-width:32ch">Practice tests written against the current blueprint, taught by working engineers.</p>
+</div>
+<div style="background:#fff;border-radius:20px;box-shadow:0 24px 56px rgba(26,25,23,.14);overflow:hidden">
+<div style="height:10px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20)"></div>
+<div style="padding:32px">
+<p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:#6a655c">Q12 / 65 · 42:17</p>
+<p style="margin:0 0 24px;font-size:28px;font-weight:400;line-height:1.5">Which service guarantees exactly-once processing?</p>
+<div style="padding:18px 22px;border-radius:10px;border:2px solid #e2ded7;font-size:26px;color:#4e4a43;margin-bottom:12px">Amazon SNS standard topic</div>
+<div style="padding:18px 22px;border-radius:10px;border:2px solid #fca781;background:#fff5f0;font-size:26px;font-weight:500;color:#37342e">Amazon SQS FIFO queue</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-label="App kit" data-screen-label="27" data-speaker-notes="Same story for the learner app — dashboard, test library, exam player, results, all built from the kit. The exam player is the one I'd most want your eyes on, because it's where your product is genuinely different from a generic course platform. Timed state, flagging, a question navigator: those needed purpose-built components, and they're the ones most likely to be wrong without your input." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#fff;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">UI kit — learner app</h2>
+<p style="margin:0 0 48px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:60ch">Dashboard, practice-test library, exam player and results, behind a 248px sidebar shell.</p>
+<div style="flex:1;border:2px solid #efece7;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:320px 1fr;box-shadow:0 12px 28px rgba(26,25,23,.10)">
+<div style="border-right:2px solid #efece7;padding:36px 24px;display:flex;flex-direction:column;gap:14px">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjYuNiA3LjQgMjAyLjUgMjcuNiIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJXaGl6bGFicyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJ3bC1nIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjYuOCIgeTE9IjM0LjgiIHgyPSI1Ny4yIiB5Mj0iNy42Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlODQwMmIiPjwvc3RvcD48c3RvcCBvZmZzZXQ9Ii41MiIgc3RvcC1jb2xvcj0iI2YwNjAyYSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y3OGIyMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik0yOC4xMiwyOC4wNmwtOS4zLTE2LjhjLTEuMi0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS45LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy4zLTItOS4zLTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00Ny41MiwyOC4wNmwtOS4zLTE2LjhjLTEuMS0yLjEtMy40LTMuNC01LjgtMy40aC01LjdjLS4yLDAtLjUuMi0uNS40di4zbDEyLjYsMjIuOGMxLjEsMi4xLDMuMywzLjQsNS44LDMuNGg2LjVsLS44LTEuNi45LDEuNmg0LjZjLjYsMCwxLS40LDEtLjlzMC0uNC0uMS0uNmMtMy44LDAtNy40LTItOS40LTUuMmguMiwwWiI+PC9wYXRoPjxwYXRoIGZpbGw9InVybCgjd2wtZykiIGQ9Ik00OC40MiwxMy43NmgwYy44LDIuMywzLjIsMy42LDUuNiwyLjgsMS44LS42LDMtMi4zLDMtNC4ycy0yLTQuNC00LjQtNC40aC04LjRjLS41LDAtLjkuNS0uOSwxdi4yYzMuNCwwLDUsNC42LDUsNC42aC4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik04OC4xMiwxMy45NmgtLjVjLS4yLDAtLjQuMi0uNS40bC0zLDEzLjctNS0xMy42Yy0uMS0uNC0uNi0uNi0uOS0uNS0uMiwwLS40LjItLjUuNWwtNSwxMy42LTIuOC0xMy41di0uMmMwLS4yLS4yLS40LS41LS40aC0uNWMtLjIsMC0uMywwLS40LjJ2LjdsMy40LDE1LjljMCwuMy40LjUuNy41aDBjLjMsMCwuNi0uMi43LS41bDUuMi0xNC4xLDUuMiwxNC4xYy4xLjMuNC41LjcuNWgwYy4zLDAsLjYtLjIuNy0uNWwzLjQtMTUuOXYtLjdjMC0uMS0uMS0uMi0uMy0uMmgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTEwNy4wMiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2Ny41aC0xMC4xdi03LjVjMC0uMy0uMi0uNS0uNS0uNWgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LTcuNWgxMC4xdjcuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMi0uNS0uNC0uNWgtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTExNi43MiwxMy45NmgtLjVjLS4zLDAtLjUuMi0uNS41aDB2MTYuNWMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDBWMTQuNDZjMC0uMy0uMy0uNS0uNS0uNVoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMGMxMjIwIiBkPSJNMTM1LjQyLDI5Ljg2aC0xMGw5LjktMTQuOGMuMi0uMi4yLS41LjEtLjctLjEtLjItLjQtLjQtLjYtLjRoLTEwLjRjLS4zLDAtLjUuMi0uNS41aDB2LjVjMCwuMy4yLjUuNS41aDkuMWwtOS45LDE0LjhjLS4yLjItLjIuNS0uMS43cy40LjQuNi40aDExLjNjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjMtLjItLjUtLjQtLjVoLS4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0xNTIuMDIsMjkuODZoLTguN3YtMTUuNGMwLS4zLS4yLS41LS41LS41aC0uNWMtLjMsMC0uNS4yLS41LjVoMHYxNi4yYzAsLjQuMy43LjcuN2g5LjRjLjMsMCwuNS0uMi41LS41aDB2LS41YzAtLjItLjEtLjQtLjQtLjRoMHYtLjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE2NS4wMiwxNC40NmMtLjItLjQtLjctLjUtMS4xLS4zLS4xLDAtLjIuMi0uMy4zbC03LDE1Ljl2LjNjLS4yLjEtLjEuMy0uMS41cy4yLjIuNC4yaC41Yy4yLDAsLjQtLjEuNS0uM2w2LjQtMTQuNSw2LjQsMTQuNGgwYzAsLjMuMy40LjUuNGguNWMuMiwwLC4zLDAsLjQtLjIuMS0uMi4xLS4zLDAtLjVsLTcuMS0xNi4zaDB2LjFaIj48L3BhdGg+PHBhdGggZmlsbD0iIzBjMTIyMCIgZD0iTTE4Ny45MiwyMi4zNmMxLjItLjgsMS45LTIuMiwxLjktMy42LS4yLTIuNi0yLjQtNC43LTUtNC41aC01LjhjLS40LDAtLjcuMy0uNy43aDB2MTUuM2MwLC40LjMuNy43LjdoNi44YzIuNi4yLDQuOS0xLjksNS00LjVoMGMwLTEuOC0xLjItMy40LTIuOS00aDB2LS4xWk0xODguNDIsMTguNzZjLS4xLDEuOS0xLjgsMy4zLTMuNiwzLjFoLTV2LTYuM2g1YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjFoMHYuMVpNMTg1LjgyLDIzLjQ2YzEuOS0uMSwzLjUsMS4zLDMuNiwzLjEtLjIsMS45LTEuOCwzLjMtMy42LDMuMWgtNi4xdi02LjNoNi4xdi4xWiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwYzEyMjAiIGQ9Ik0yMDIuNzIsMjEuODZjLTIuNC0uOS00LjctMS44LTQuNy0zLjJzMS45LTMuMiw0LjMtMy4yLDQuMywxLjQsNC4zLDMuMnYuMmMwLC4zLjIuNS41LjVoLjVjLjMsMCwuNS0uMi41LS41aDB2LS4yYzAtMi42LTIuNi00LjctNS44LTQuN3MtNS44LDIuMS01LjgsNC43LDIuOSwzLjYsNS45LDQuNmMyLjQuOSw0LjcsMS44LDQuNywzLjNzLTIuMiwzLjItNC44LDMuMi00LjgtMS40LTQuOC0zLjJ2LS4yYzAtLjMtLjItLjUtLjUtLjVoLS41Yy0uMywwLS41LjItLjUuNWgwdi4yYzAsMi42LDIuOCw0LjcsNi4zLDQuN3M2LjMtMi4xLDYuMy00LjdjLjEtMi41LTIuOS0zLjYtNS45LTQuN1oiPjwvcGF0aD48L2c+PC9zdmc+" alt="Whizlabs" style="height:32px;width:auto;margin:0 12px 24px">
+<span style="padding:20px 22px;border-radius:10px;font-size:26px;font-weight:500;color:#6a655c">Dashboard</span>
+<span style="padding:20px 22px;border-radius:10px;background:#fff5f0;color:#b23b17;font-size:26px;font-weight:600">Practice Tests</span>
+<span style="padding:20px 22px;border-radius:10px;font-size:26px;font-weight:500;color:#6a655c">Results</span>
+<span style="padding:20px 22px;border-radius:10px;font-size:26px;font-weight:500;color:#6a655c">Hands-On Labs</span>
+<div style="margin-top:auto;padding:26px;border-radius:10px;background:linear-gradient(135deg,#fff3ee,#fff8ea);border:2px solid #ffe7dc">
+<p style="margin:0 0 8px;font-size:26px;font-weight:700;color:#8c2f14">Exam in 26 days</p>
+<p style="margin:0;font-size:24px;font-weight:400;line-height:1.4;color:#b23b17">38% through your readiness plan.</p>
+</div>
+</div>
+<div style="background:#f9f7f4;padding:40px">
+<p style="margin:0 0 32px;font-size:44px;font-weight:600;letter-spacing:-.01em">Good morning, Priya</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px">
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:28px"><p style="margin:0 0 8px;font-size:44px;font-weight:700;letter-spacing:-.02em">82%</p><p style="margin:0;font-size:24px;color:#6a655c">Average mock score</p></div>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:28px"><p style="margin:0 0 8px;font-size:44px;font-weight:700;letter-spacing:-.02em">14</p><p style="margin:0;font-size:24px;color:#6a655c">Tests completed</p></div>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:28px"><p style="margin:0 0 8px;font-size:44px;font-weight:700;letter-spacing:-.02em">26d</p><p style="margin:0;font-size:24px;color:#6a655c">Until exam day</p></div>
+</div>
+<div style="background:#fff;border:2px solid #efece7;border-radius:14px;padding:32px">
+<p style="margin:0 0 24px;font-size:30px;font-weight:600">Continue where you left off</p>
+<div style="display:flex;align-items:center;gap:20px;padding:22px 24px;border-radius:10px;border:2px solid #fca781;background:#fff5f0">
+<span style="width:44px;height:44px;border-radius:999px;background:linear-gradient(135deg,#e8402b,#f0602a 52%,#f78b20);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:700">4</span>
+<span style="flex:1;font-size:28px;font-weight:600">Full-length mock 2</span>
+<span style="font-family:'IBM Plex Mono',monospace;font-size:26px;color:#8a847a">130:00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-label="Iconography" data-screen-label="28" data-speaker-notes="Iconography is a gap I want to name rather than paper over. No Whizlabs icon set was supplied, so this is Lucide standing in — matched on stroke weight and geometry, and routed through a single component. That last detail is the important one: when you send the real set, it swaps in behind that component and every screen updates at once. Nobody hunts down individual icons. Also, no emoji anywhere, deliberately." style="display:flex;flex-direction:column;padding:100px 100px 80px;background:#f9f7f4;font-family:Poppins,sans-serif;color:#1a1917">
+<h2 style="margin:0 0 16px;font-size:64px;font-weight:700;letter-spacing:-.02em">Iconography</h2>
+<p style="margin:0 0 60px;font-size:34px;font-weight:300;line-height:1.5;color:#4e4a43;max-width:60ch">Lucide at 2px stroke, routed through a single <span style="font-family:'IBM Plex Mono',monospace;font-weight:500">Icon</span> component. Sizes 16 to 24. No emoji, anywhere.</p>
+<div id="wl-icons" style="display:flex;gap:52px;flex-wrap:wrap;color:#37342e;margin-bottom:56px">
+<i data-lucide="play-circle"></i><i data-lucide="clipboard-check"></i><i data-lucide="flask-conical"></i><i data-lucide="award"></i><i data-lucide="trophy"></i><i data-lucide="badge-check"></i><i data-lucide="clock"></i><i data-lucide="calendar"></i><i data-lucide="trending-up"></i><i data-lucide="bookmark"></i><i data-lucide="download"></i><i data-lucide="flag"></i><i data-lucide="bell"></i><i data-lucide="search"></i>
+</div>
+<p style="margin:0;font-size:30px;font-weight:400;line-height:1.6;color:#6a655c;max-width:70ch;border-top:2px solid #e2ded7;padding-top:36px">This is a documented substitution — no Whizlabs icon set was supplied. Send the real set and it swaps in behind the same component.</p>
+</section>
+
+<section data-label="Open items" data-screen-label="29" data-speaker-notes="So where this actually stands. The logo, the three gradient stops and Poppins came from you and are exact — build on those with confidence. The mono, the icons and both screen layouts are my proposals, and I'd rather you correct them now than discover them in production. Send real screens or a Figma file and the UI kits become accurate instead of merely plausible. Everything here is built to be corrected, and that's the point — a system nobody edits is a system nobody uses." style="display:flex;flex-direction:column;justify-content:space-between;padding:100px;background:#1a1917;font-family:Poppins,sans-serif;color:#fff;position:relative;overflow:hidden">
+<span style="position:absolute;inset:auto 0 0 0;height:10px;background:linear-gradient(90deg,#e8402b,#f0602a 52%,#f78b20)"></span>
+<h2 style="margin:0;font-size:64px;font-weight:700;letter-spacing:-.02em">Open items</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:56px">
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 14px;font-size:36px;font-weight:600">The mono</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">IBM Plex Mono is a proposal. Confirm it, replace it, or drop it for Poppins.</p></div>
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 14px;font-size:36px;font-weight:600">The icon set</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">Lucide stands in until the real SVG sprite or font arrives.</p></div>
+<div style="border-top:2px solid #4e4a43;padding-top:28px"><p style="margin:0 0 14px;font-size:36px;font-weight:600">The screens</p><p style="margin:0;font-size:28px;font-weight:400;line-height:1.6;color:#aca69c">Both UI kits are reasoned reconstructions. Real screens or Figma make them accurate.</p></div>
+</div>
+<p style="margin:0;font-size:34px;font-weight:300;line-height:1.5;color:#cbc6bd;max-width:64ch">The logo, the gradient's three stops and Poppins are confirmed and exact. Everything else is a first draft built to be corrected.</p>
+</section>
+
+</x-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount(){ this.hydrateIcons(); }
+  componentDidUpdate(){ this.hydrateIcons(); }
+  hydrateIcons(){
+    const run = () => {
+      if (!window.lucide) return;
+      // Each host declares its own glyph size, so hydrate host by host.
+      const hosts = [
+        ...document.querySelectorAll('#wl-icons'),
+        ...document.querySelectorAll('.wl-ico')
+      ];
+      hosts.forEach(h => {
+        if (h.dataset.wlHydrated) return;
+        const pending = h.querySelectorAll('i[data-lucide]');
+        if (!pending.length) return;
+        h.dataset.wlHydrated = '1';
+        const sz = Number(h.dataset.sz) || 56;
+        pending.forEach(i => window.lucide.createIcons({
+          nameAttr: 'data-lucide',
+          attrs: { width: sz, height: sz, 'stroke-width': 2 },
+          icons: undefined,
+          root: i.parentElement
+        }));
+      });
+    };
+    run();
+    if (!window.lucide) window.addEventListener('load', run, { once: true });
+    setTimeout(run, 400);
+    setTimeout(run, 1200);
+  }
+}
+
+</script>
+</body>
+</html>

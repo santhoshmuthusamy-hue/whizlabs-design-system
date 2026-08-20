@@ -1,0 +1,7 @@
+/* Focus. Components style via inline style objects, so a :focus-visible pseudo-state
+   cannot reach their box-shadow — inline styles win. `outline` is never set inline,
+   so this one rule gives every interactive element keyboard focus coverage.
+   Text fields additionally paint --focus-ring from React onFocus/onBlur state. */
+:where(a,button,[role="tab"],[role="switch"],input,select,textarea,summary,[tabindex]):focus-visible{outline:3px solid var(--orange-500);outline-offset:2px;border-radius:inherit}
+/* Dark and brand surfaces: the orange loses contrast, so switch to white. */
+:where(.wl-on-dark,.wl-on-brand) :where(a,button,[role="tab"],input,select,[tabindex]):focus-visible{outline-color:var(--white)}

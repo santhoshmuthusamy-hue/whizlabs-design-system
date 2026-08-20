@@ -1,0 +1,9 @@
+<!-- @dsCard group="Brand" viewport="700x150" name="Focus & disabled" subtitle="Accessibility states shared by every control" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>*{box-sizing:border-box}body{margin:0;padding:20px 24px;font-family:var(--font-body);background:var(--white);color:var(--text-strong)}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.sw{border-radius:var(--radius-md);height:64px;display:flex;align-items:flex-end;padding:7px;font:var(--fw-semibold) 10px/1.2 var(--font-mono);color:#fff}.lbl{font:var(--fw-medium) 11px/1.3 var(--font-mono);color:var(--text-muted);margin-top:5px}.cell{flex:1;min-width:0}</style></head><body>
+<div class="row" style="gap:16px">
+<div style="height:40px;padding:0 16px;display:grid;place-items:center;border:1px solid var(--border-focus);border-radius:var(--radius-md);box-shadow:var(--focus-ring);font:500 14px/1 var(--font-body)">Focused field</div>
+<div style="height:40px;padding:0 18px;display:grid;place-items:center;border-radius:var(--radius-md);background:var(--brand-gradient);color:#fff;font:600 14px/1 var(--font-display);box-shadow:var(--focus-ring)">Focused button</div>
+<div style="height:40px;padding:0 18px;display:grid;place-items:center;border-radius:var(--radius-md);background:var(--brand-gradient);color:#fff;font:600 14px/1 var(--font-display);opacity:.45">Disabled</div>
+</div>
+<div class="lbl" style="margin-top:12px">Text fields paint the 3px rgba(240,96,42,.28) ring; every other control gets a 3px orange-500 outline at 2px offset from the global <code style="font-family:var(--font-mono)">:focus-visible</code> rule in tokens/focus.css. Never removed. Disabled is .45 opacity, never a grey repaint.</div>
+</body></html>

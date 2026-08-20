@@ -1,0 +1,94 @@
+:root{
+/* ---- Brand: the exact three stops of the logo gradient (assets/logo-lockup.svg) ----
+   In the artwork the ramp runs bottom-left to top-right across the mark's bounding
+   box as ONE continuous span over all three shapes. --brand-gradient reproduces it
+   at 135deg for use on rectangular surfaces. */
+--brand-red:#e8402b;
+--brand-vermilion:#f0602a;
+--brand-orange:#f78b20;
+--brand-amber:#f9a825;
+--brand-gradient:linear-gradient(135deg,var(--brand-red) 0%,var(--brand-vermilion) 52%,var(--brand-orange) 100%);
+--brand-gradient-soft:linear-gradient(135deg,#fff3ee 0%,#fff8ea 100%); /* @kind color */
+
+/* ---- Orange ramp (primary) ---- */
+--orange-50:#fff5f0;
+--orange-100:#ffe7dc;
+--orange-200:#ffcab2;
+--orange-300:#fca781;
+--orange-400:#f78454;
+--orange-500:#f0602a;
+--orange-600:#d94b1c;
+--orange-700:#b23b17;
+--orange-800:#8c2f14;
+--orange-900:#6b2511;
+
+/* ---- Red ramp (secondary brand / urgency) ---- */
+--red-50:#fef2f0;
+--red-100:#fddfda;
+--red-200:#fbbcb2;
+--red-300:#f58f80;
+--red-400:#ee6350;
+--red-500:#e8402b;
+--red-600:#c93120;
+--red-700:#a4271a;
+
+/* ---- Ink / neutral ramp ---- */
+--ink-950:#1a1917;
+--ink-900:#26241f;
+--ink-800:#37342e;
+--ink-700:#4e4a43;
+--ink-600:#6a655c;
+--ink-500:#8a847a;
+--ink-400:#aca69c;
+--ink-300:#cbc6bd;
+--ink-200:#e2ded7;
+--ink-100:#efece7;
+--ink-50:#f9f7f4;
+--white:#ffffff;
+
+/* ---- Support accents (used sparingly, for data + status) ---- */
+--teal-500:#0f9d8f;
+--teal-100:#d9f3ef;
+--blue-500:#2563eb;
+--blue-100:#dbeafe;
+--green-500:#12a150;
+--green-100:#d8f3e3;
+--yellow-500:#f5a524;
+--yellow-100:#fdf0d5;
+
+/* ---- Semantic: text ---- */
+--text-strong:var(--ink-950);
+--text-body:var(--ink-700);
+--text-muted:var(--ink-500);
+--text-faint:var(--ink-400);
+--text-inverse:var(--white);
+--text-brand:var(--orange-600);
+--text-link:var(--orange-600);
+--text-link-hover:var(--orange-700);
+
+/* ---- Semantic: surfaces ---- */
+--surface-page:var(--white);
+--surface-subtle:var(--ink-50);
+--surface-card:var(--white);
+--surface-raised:var(--white);
+--surface-inverse:var(--ink-950);
+--surface-brand:var(--orange-500);
+--surface-brand-subtle:var(--orange-50);
+--surface-overlay:rgba(26,25,23,.55);
+
+/* ---- Semantic: borders ---- */
+--border-subtle:var(--ink-100);
+--border-default:var(--ink-200);
+--border-strong:var(--ink-300);
+--border-brand:var(--orange-500);
+--border-focus:var(--orange-500);
+
+/* ---- Semantic: status ---- */
+--success-fg:#0b7a3c;--success-bg:var(--green-100);--success-solid:var(--green-500);
+--warning-fg:#8a5a06;--warning-bg:var(--yellow-100);--warning-solid:var(--yellow-500);
+--danger-fg:var(--red-700);--danger-bg:var(--red-50);--danger-solid:var(--red-500);
+--info-fg:#1d4ed8;--info-bg:var(--blue-100);--info-solid:var(--blue-500);
+
+/* ---- Interaction ---- */
+--focus-ring:0 0 0 3px rgba(240,96,42,.28);
+}
